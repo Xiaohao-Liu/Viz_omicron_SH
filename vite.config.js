@@ -17,7 +17,7 @@ export default defineConfig({
       additionalData: '@import "@/assets/variable.scss";'
     }
   },
-  base: "/docs/",
+  base: "/Viz_omicron_SH/",
   build:{
     outDir:"docs"
   }
