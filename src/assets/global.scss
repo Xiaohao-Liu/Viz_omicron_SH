@@ -1,0 +1,158 @@
+@import "variable.scss";
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+    margin:auto;
+  }
+
+.board{
+  width: 650px;
+  min-height: 100px;
+  margin:20px 350px;
+}
+
+.test{
+  background-color: red;
+}
+
+body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,li,ol,p,td,textarea,th,ul{margin:0;padding:0}
+
+body{
+  font-size:$font-size; 
+  font-family: '微软雅黑','PingFang SC','Droidsansfallback';
+  color:$color;
+  background:$bg-color; 
+  overflow-x: hidden;
+}
+img{vertical-align:top;}
+a img{border:none;}
+a{
+  color:$button-checked-orange;
+  text-decoration:none;
+  outline-style:none;
+}
+var,em{font-style:normal}
+ul,li{list-style:none}
+.mobile-only{display: none}
+.pc-only{display: block;}
+.cover{width: 100%; height: 100%; position: relative; text-align: center; background-color: #bbb; color: #fff; font-size: 100px; line-height: 500px}
+.cover-bg{ position: absolute; z-index: -1; top:0; left:0; width: 1200px; height: auto}
+.cover-bg img{position: absolute; display: none; }
+.content-div{padding-top: 10px; padding-bottom: 10px; position: relative; width: 100%; height: auto}
+.content-wrap{width: 640px; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;}
+.content-wrap p{padding-top: 15px; padding-bottom: 15px}
+/* .content-wrap .subtitle span{border-bottom: 2px #000 solid; padding-bottom: 4px; font-weight: 900} */
+.content-wrap .subtitle{color:$color; font-size: 18px; font-weight: bolder; text-align: center; }
+.content-wrap .caption{color:$color; font-size: 12px; line-height: 20px; width: 70%; margin:0 auto;}
+
+.chart-div{width: 650px; height: 500px; position: relative; margin: 0 auto; overflow: hidden; border:#bbb 1px solid;}
+
+.chart-scroll-wrap{width: 990px; height: 500px; position: relative; margin: 0 auto; overflow-x: hidden; border:#bbb 1px solid;}
+.chart-scroll-horizontal{width: 990px; height: 100%; position: relative; background-image: url(images/caixin.png); opacity: 0.3}
+
+    /* scroll 相关样式 */
+    #scrolly，#scrolly2 {
+        position: relative;
+        background-color: #666666;
+        padding: 1rem;}
+
+    /* 滑动的标签 */
+    article {
+        position: relative;
+        padding: 0;
+        min-width: 20rem;
+        margin: 0 auto;}
+    
+    /* 下面的图图 */
+    figure {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background-color: #AA351B;
+        z-index: 0;
+    }
+
+    figure p {
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        font-weight: 900;
+        color: #666666;
+    }
+
+    /* 滑动的标签第几步 */
+    .step {
+        margin: 0 auto 2rem auto;
+        color: $color;
+        /* background-color: #3b3b3b; */
+    }
+
+    .step:last-child {
+        margin-bottom: 0;
+    }
+
+    /* 滑动的标签激活状态，可删掉 */
+    .step.is-active p {
+        /* background-color: #fff; */
+        color: #504235;
+    }
+
+    .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        /* background-color: #3b3b3b; */
+    }
+
+    /* landing 界面开始 */
+
+.bubble{
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  
+}
+
+
+@media (max-width: 640px){
+  body{overflow-x: hidden;}
+  .mobile-only{display: block}
+  .pc-only{display:none;}
+
+  .content-wrap{width: 90%; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;overflow-x: hidden;}
+  .chart-div{width: 90%;overflow-x: hidden; margin:0 auto;}
+  .chart-scroll-wrap{width: 90%; margin:0 auto;}
+  .chart-scroll-wrap{ overflow-x: scroll; }
+  .credits p{width: 100%; font-size: 12px}
+  .credits p.first{width: 80%;padding-left: 10%}
+
+  .chart-scroll-wrap .tip{position: absolute; z-index:1000; background-image: url(images/scroll-tip.png); width: 120px; height:80px; background-size: 100% auto; top:200px;}
+  .chart-scroll-wrap .tip .hand{animation:moveLeft 2s infinite linear; -webkit-animation:moveLeft 2s infinite linear; position: absolute;}
+  @keyframes moveLeft{
+    0%{right:-20px;}
+    70%{right:60px;}
+    100%{right:60px;}
+  }
+  @-webkit-keyframes moveLeft{
+    0%{right:-20px;}
+    70%{right:60px;}
+    100%{right:60px;}
+  }
+
+}

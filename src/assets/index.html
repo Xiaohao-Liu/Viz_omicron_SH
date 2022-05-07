@@ -1,0 +1,466 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta content="telephone=no" name="format-detection" />
+	    <meta content="email=no" name="format-detection" />
+	    <title>上海需要什么，我们为什么需要上海</title>
+		<script src="js/jquery-1.7.2.min.js" language="javascript"></script>
+		<script src="js/d3.min.js" language="javascript"></script>
+		<script src="js/jquery.color.js" language="javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/landing.css">
+		<!-- <link rel="stylesheet" href="css/nice-select.css"> -->
+
+	</head>
+
+	<style>
+		body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,li,ol,p,td,textarea,th,ul{margin:0;padding:0}
+		body{font-size:16px; font-family: '微软雅黑','PingFang SC','Droidsansfallback';color:#504235;background:#F2F2F2; overflow-x: hidden; }
+		img{vertical-align:top;}
+		a img{border:none;}
+		a{color:#AA351B;text-decoration:none;outline-style:none;}
+		var,em{font-style:normal}
+		ul,li{list-style:none}
+		.mobile-only{display: none}
+		.pc-only{display: block;}
+		.cover{width: 100%; height: 100%; position: relative; text-align: center; background-color: #bbb; color: #fff; font-size: 100px; line-height: 500px}
+		.cover-bg{ position: absolute; z-index: -1; top:0; left:0; width: 1200px; height: auto}
+		.cover-bg img{position: absolute; display: none; }
+		.content-div{padding-top: 10px; padding-bottom: 10px; position: relative; width: 100%; height: auto}
+		.content-wrap{width: 640px; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;}
+		.content-wrap p{padding-top: 15px; padding-bottom: 15px}
+		/* .content-wrap .subtitle span{border-bottom: 2px #000 solid; padding-bottom: 4px; font-weight: 900} */
+		.content-wrap .subtitle{color:#504235; font-size: 18px; font-weight: bolder; text-align: center; }
+		.content-wrap .caption{color:#504235; font-size: 12px; line-height: 20px; width: 70%; margin:0 auto;}
+
+		.chart-div{width: 990px; height: 500px; position: relative; margin: 0 auto; overflow: hidden; border:#bbb 1px solid;}
+
+		.chart-scroll-wrap{width: 990px; height: 500px; position: relative; margin: 0 auto; overflow-x: hidden; border:#bbb 1px solid;}
+		.chart-scroll-horizontal{width: 990px; height: 100%; position: relative; background-image: url(images/caixin.png); opacity: 0.3}
+
+        /* scroll 相关样式 */
+        #scrolly，#scrolly2 {
+            position: relative;
+            background-color: #666666;
+            padding: 1rem;}
+
+        /* 滑动的标签 */
+        article {
+            position: relative;
+            padding: 0;
+            max-width: 20rem;
+            margin: 0 auto;}
+        
+        /* 下面的图图 */
+        figure {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            background-color: #AA351B;
+            z-index: 0;
+        }
+
+        figure p {
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            font-weight: 900;
+            color: #666666;
+        }
+
+        /* 滑动的标签第几步 */
+        .step {
+            margin: 0 auto 2rem auto;
+            color: #F9D7C0;
+            /* background-color: #3b3b3b; */
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 滑动的标签激活状态，可删掉 */
+        .step.is-active p {
+            /* background-color: #fff; */
+            color: #504235;
+        }
+
+        .step p {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+            /* background-color: #3b3b3b; */
+        }
+
+        /* landing 界面开始 */
+
+		.bubble{
+			text-align: center;
+			margin: 0 auto;
+			width: 400px;
+			
+		}
+
+
+		@media (max-width: 640px){
+			body{overflow-x: hidden;}
+			.mobile-only{display: block}
+			.pc-only{display:none;}
+
+			.content-wrap{width: 90%; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;overflow-x: hidden;}
+			.chart-div{width: 90%;overflow-x: hidden; margin:0 auto;}
+			.chart-scroll-wrap{width: 90%; margin:0 auto;}
+			.chart-scroll-wrap{ overflow-x: scroll; }
+			.credits p{width: 100%; font-size: 12px}
+			.credits p.first{width: 80%;padding-left: 10%}
+
+			.chart-scroll-wrap .tip{position: absolute; z-index:1000; background-image: url(images/scroll-tip.png); width: 120px; height:80px; background-size: 100% auto; top:200px;}
+			.chart-scroll-wrap .tip .hand{animation:moveLeft 2s infinite linear; -webkit-animation:moveLeft 2s infinite linear; position: absolute;}
+			@keyframes moveLeft{
+				0%{right:-20px;}
+				70%{right:60px;}
+				100%{right:60px;}
+			}
+			@-webkit-keyframes moveLeft{
+				0%{right:-20px;}
+				70%{right:60px;}
+				100%{right:60px;}
+			}
+
+		}
+
+	</style>
+	<body>
+    
+<!-- 
+    <section id ="cover">
+	<div class="cover">
+		封面
+	</div>
+    </section> -->
+
+    
+    <section id="scrolly">
+
+        <figure>
+            <p></p>
+        </figure>
+
+        <article>
+            <div class="step" data-step="1">
+                <p>标题</p>
+            </div>
+            <div class="step" data-step="2">
+                <p>一段话</p>
+            </div>
+            <div class="step" data-step="3">
+                <p>另一段话</p>
+            </div>
+            <div class="step" data-step="4">
+                <div class="options"><a id='database_button' href="https://hurricanemariasdead.com/database.html">查看求助信息</a>
+                    <div class="scrolldown"><a href="#mainpart">阅读故事</a></div>
+                </div>
+            </div>
+        </article>
+    </section>
+  <div id="bigbody">
+    <section id="mainpart">
+
+	<div class="content-div">
+		<div class="content-wrap">
+            <p class="subtitle"><span>物资</span></p>
+			<p>上海需要<span class="highlight">物资</span>因为大家无法干饭</p>
+			<p>多饿多饿多饿多饿</p>
+		</div>
+	</div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p class="subtitle"><span>医疗</span></p>
+		</div>
+	</div>
+	<div class="chart-div" ></div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p>需要药物，一个地图，上面有药店吧大概<span class="highlight">救救孩子！！！！</span></p>
+		</div>
+	</div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p class="subtitle"><span>很宽的手机端左右滑动图(需要吗？我就是留下罢了)</span></p>
+		</div>
+	</div>
+	<div class="chart-scroll-wrap">
+		<div class="chart-scroll-horizontal"></div>
+		<div class="mobile-only tip">
+			<div class="hand"><img width="60"></div>
+		</div>
+	</div>
+
+
+	<div class="content-div">
+		<div class="content-wrap">
+			<p>还有啥内容啥内容啥内容</p>
+
+		</div>
+	</div>
+	<div class="content-div">
+		<div class="content-wrap">
+			<p class="subtitle"><span>我们为什么需要上海</span></p>
+		</div>
+	</div>
+	<div class="chart-div" ></div>
+
+	<div class="content-div">
+		<div class="content-wrap">
+			<p>你说为什么为什么为什么<span class="highlight">因为有钱</span> </p>
+		</div>
+	</div>
+
+    </section>
+
+    <section id="scrolly2">
+
+        <figure>
+            <p>0</p>
+        </figure>
+
+        <article>
+            <div class="step" data-step="1">
+                <p>地图变</p>
+            </div>
+            <div class="step" data-step="2">
+                <p>变变变</p>
+            </div>
+            <div class="step" data-step="3">
+                <p>变变变变</p>
+            </div>
+            <div class="step" data-step="4">
+                <p>最后再变</p>p>
+            </div>
+        </article>
+    </section>
+
+
+
+    <section id="other parts">
+    <div class="content-div">
+        <div class="content-wrap">
+            <p class="subtitle"><span>医疗</span></p>
+        </div>
+    </div>
+    <div class="chart-div" ></div>
+    <div class="content-div">
+        <div class="content-wrap">
+            <p>需要药物，一个地图，上面有药店吧大概<span class="highlight">救救孩子！！！！</span></p>
+        </div>
+    </div>
+	<div class="content-div">
+	  <div class="content-wrap">
+		<div class="test-window">
+			<h5>
+			  假如我是
+			  <div class="select-box">
+				<select class="small" name="native" id="native" onchange="test()">
+				  <option value="0">本地与否</option>
+				  <option value="否">本地人</option>
+				  <option value="是">外地人</option>
+				</select>
+			  </div>
+			  作为
+			  <div class="select-box">
+				<select class="small" name="status" id="status" onchange="test()">
+				  <option value="0">职业</option>
+				  <option value="工薪族">工薪族</option>
+				  <option value="学生">学生</option>
+				  <option value="一线工作者（如大白、志愿者、骑手等）">一线工作者（如大白、志愿者、骑手等）</option>
+				  <option value="其他">其他</option>
+				</select>
+			  </div>
+			  住在
+			  <div class="select-box">
+				<select class="small" name="type" id="type" onchange="test()">
+				  <option value="0">地区 </option>
+				  <option value="浦东新区">浦东新区</option>
+				  <option value="静安区">静安区</option>
+				  <option value="徐汇区">徐汇区</option>
+				  <option value="长宁区">长宁区</option>
+				  <option value="虹口区">虹口区</option>
+				  <option value="杨浦区">杨浦区</option>
+				  <option value="普陀区">普陀区</option>
+				  <option value="闵行区">闵行区</option>
+				  <option value="宝山区">宝山区</option>
+				  <option value="嘉定区">嘉定区</option>
+				  <option value="金山区">金山区</option>
+				  <option value="松江区">松江区</option>
+				  <option value="青浦区">青浦区</option>
+				  <option value="奉贤区">奉贤区</option>
+				  <option value="崇明区">崇明区</option>
+				</select>
+			  </div>
+			  <!-- <button onclick="test()">开始测试</button> -->
+			</h5>
+			<div class="result in">
+			  <img class="feiji" src="img/flight.png"alt=""/>
+			  <h5>
+				您最久已经<span class="max" id='veg' style="background-color:#fff9f0;box-shadow: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>没吃蔬菜了。
+				<br>
+				您最久已经<span class="max" id="protein" style="background-color:#fff9f0;box-shadow: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>没吃蛋白质了。
+				<br>
+				您最久已经<span class="max" id='fruit' style="background-color:#fff9f0;box-shadow: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>没吃水果了。
+				<br>
+				您最久已经<span class="max" id='carbon' style="background-color:#fff9f0;box-shadow: none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>没吃主食了。
+				<br>
+			  </h5>
+			</div>
+		  </div>
+		</div>
+
+		<div class="chart-div" id="bubble-chart">
+			<div class="bubble" id="bubble-veg"></div>
+			<div class="bubble" id="bubble-protein"></div>
+			<div class="bubble" id="bubble-fruit"></div>
+			<div class="bubble" id="bubble-carbon"></div>
+		</div>
+
+	</div>
+
+    </section>
+ </div>
+
+</body>
+
+
+<script type="text/javascript">
+	var isMobile = $(window).width()>640?false:true;
+	var maxWIDTH = isMobile? $(window).width():990
+	var maxHEIGHT = $(window).height()
+
+	var WIDTH = maxWIDTH
+	var HEIGHT = maxHEIGHT
+	var highlightFlag = [0,0,0,0,0]
+	$(document).scroll(function(){
+
+			var top = $(document).scrollTop()
+			if(top>$(window).height()+100){
+
+			}
+
+			/* 高亮说明文字 */
+			for(var i=0; i<highlightFlag.length; i++){
+
+				var highlight = $(document).find(".highlight").eq(i).offset().top
+				if(top>highlight-$(window).height()*0.5){
+					if(highlightFlag[i]==0){
+						$(document).find(".highlight").eq(i).animate({backgroundColor:'rgba(249,215,192,1)'},1000)
+						highlightFlag[i]=1;
+					}
+				}
+			}
+
+
+
+	})
+
+	$(document).ready(function(){
+		if(isMobile) {
+			$(".chart-scroll-wrap").find(".tip").css("left",WIDTH*0.3)
+			$(".chart-scroll-wrap").bind("touchstart",function(){
+				$(this).find(".tip").fadeOut(500)
+			})
+		}
+	})
+
+
+</script>
+
+<script src="js/scrollama.min.js"></script>
+
+<script>
+
+    // landing的scroll和hide-scroll script
+
+    $("#bigbody").hide()
+    $( ".scrolldown" ).click(function() {
+        $("#bigbody").show()
+    });
+
+
+	function init(selector) {
+        var scrolly = d3.select(selector);
+        var figure = scrolly.select("figure");
+        var article = scrolly.select("article");
+        var step = article.selectAll(".step");
+
+        var scroller = scrollama();
+
+        function handleResize() {
+			// 1. update height of step elements
+			var stepH = Math.floor(window.innerHeight * 0.75);
+			step.style("height", stepH + "px");
+
+			var figureHeight = window.innerHeight / 2;
+			var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+			figure
+				.style("height", figureHeight + "px")
+				.style("top", figureMarginTop + "px");
+
+			// 3. tell scrollama to update new element dimensions
+			scroller.resize();
+		}
+
+        function handleStepEnter(response) {
+            if(selector=="#scrolly2"){
+                figure.select("p").text(response.index + 1);
+            }else{
+                step.classed("is-active", function (d, i) {
+				return i === response.index;
+			});
+            }
+            
+		}
+
+	    function setupStickyfill() {
+			scrolly.selectAll(".sticky").each(function () {
+				Stickyfill.add(this);
+			});
+		}
+
+
+			setupStickyfill();
+
+			// 1. force a resize on load to ensure proper dimensions are sent to scrollama
+			handleResize();
+
+			scroller
+				.setup({
+                    container: selector,
+                    graphic: "figure",
+                    step: "article .step",
+					offset: 0.33,
+					debug: false
+				})
+				.onStepEnter(handleStepEnter);
+	}
+
+		// kick things off
+		init("#scrolly");
+        init("#scrolly2");
+</script>
+
+<script src="js/jquery.nice-select.js"></script>
+<script src="data/output.js"></script>
+<script src="js/select.js"></script>
+<script src="js/main.js"></script>
+</html>
