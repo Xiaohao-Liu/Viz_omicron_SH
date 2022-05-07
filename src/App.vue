@@ -11,8 +11,8 @@ const show_story = ref(false);
 
 <template>
   <sec-1 @_show_story="_show_story"/>
-  <mainpart v-if="show_story"/>
-  <sec-2 v-if="show_story"/>
+  <mainpart v-show="show_story"/>
+  <sec-2 v-show="show_story"/>
 </template>
 
 <script>
