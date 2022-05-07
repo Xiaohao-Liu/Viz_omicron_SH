@@ -6,18 +6,23 @@ import mainpart from './components/mainpart.vue'
 import sec2 from './components/sec2.vue'
 
 import {ref} from 'vue';
-const show_story = ref(false);
+
 </script>
 
 <template>
   <sec-1 @_show_story="_show_story"/>
-  <mainpart v-show="show_story"/>
-  <sec-2 v-show="show_story"/>
+  <mainpart v-if="show_story"/>
+  <sec-2 v-if="show_story"/>
 </template>
 
 <script>
 export default {
   components: { mainpart },
+  data(){
+    return {
+      show_story: false 
+    }
+  },
   methods:{
     _show_story(){
       this.show_story = true
