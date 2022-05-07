@@ -4,7 +4,7 @@ import scrollama from "scrollama";
 import { ref } from 'vue'
 import chartScatter from './charts/chartScatter.vue';
 
-const id = ref("sec-1")
+const id = ref("sec-2")
 const count = ref(0)
 const tab = ref(1)
 </script>
@@ -98,12 +98,12 @@ export default {
                 .setup({
                     container: scrolly,
                     graphic: figure,
-                    step: ".step-"+this.id,
+                    step: ".step-sec-2",
                     offset: 0.5,
                     debug: false
                 })
                 .onStepEnter((resp)=>{
-                  const base = 4
+                  const base = 0
                   this.count = resp.index
                   if(resp.index==base + 0){this.$refs.scatter.step_0();return}
                   if(resp.index==base + 1){this.$refs.scatter.step_1(); return}

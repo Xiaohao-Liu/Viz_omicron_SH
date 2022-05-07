@@ -18,7 +18,7 @@ const figureMarginTop = (window.innerHeight - figureHeight) / 2;
         <p></p>
     </figure>
 
-    <article>
+    <article ref="box">
         <div :class="'step step-'+id" data-step="1" :style="{'height':stepH + 'px'}">
             <p class="title" >“民以食为天”，上海求助里的饮食裂缝</p>
         </div>
@@ -58,7 +58,8 @@ export default {
                 .setup({
                     container: scrolly,
                     graphic: figure,
-                    step: ".step-"+this.id,
+                    // parent:  this.$refs.box,
+                    step: ".step-sec-1",
                     offset: 0.33,
                     debug: false
                 })
