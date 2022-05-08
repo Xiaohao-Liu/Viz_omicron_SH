@@ -1,0 +1,2932 @@
+[
+  {
+    "序号": 2,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 3,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 4,
+    "type": "宝山区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 5,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 10,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 6,
+    "type": "静安区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 7,
+    "type": "虹口区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 8,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 15,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 9,
+    "type": "宝山区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 10,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 5,
+    "protein": 0,
+    "carbon": 9
+  },
+  {
+    "序号": 11,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 18,
+    "fruit": 3,
+    "protein": 20,
+    "carbon": 3
+  },
+  {
+    "序号": 12,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 13
+  },
+  {
+    "序号": 13,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 14,
+    "type": "虹口区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 15,
+    "type": "宝山区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 16,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 17,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 18,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 18,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 19,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 20,
+    "type": "松江区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 21,
+    "type": "徐汇区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 4,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 22,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 1,
+    "carbon": 3
+  },
+  {
+    "序号": 23,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 24,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 16,
+    "fruit": 15,
+    "protein": 3,
+    "carbon": 3
+  },
+  {
+    "序号": 25,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 20,
+    "protein": 0,
+    "carbon": 20
+  },
+  {
+    "序号": 26,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 27,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 28,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 11,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 29,
+    "type": "普陀区",
+    "native": "否",
+    "status": "学生",
+    "veg": 9,
+    "fruit": 9,
+    "protein": 9,
+    "carbon": 8
+  },
+  {
+    "序号": 30,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 8,
+    "protein": 1,
+    "carbon": 7
+  },
+  {
+    "序号": 31,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "其他",
+    "veg": 2,
+    "fruit": 18,
+    "protein": 2,
+    "carbon": 4
+  },
+  {
+    "序号": 32,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 5,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 33,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 34,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 7,
+    "protein": 15,
+    "carbon": 1
+  },
+  {
+    "序号": 35,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 20,
+    "protein": 5,
+    "carbon": 4
+  },
+  {
+    "序号": 36,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 10,
+    "fruit": 10,
+    "protein": 10,
+    "carbon": 15
+  },
+  {
+    "序号": 37,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 7,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 38,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 1,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 39,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 40,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "其他",
+    "veg": 4,
+    "fruit": 20,
+    "protein": 7,
+    "carbon": 2
+  },
+  {
+    "序号": 41,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 42,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 6,
+    "protein": 5,
+    "carbon": 0
+  },
+  {
+    "序号": 43,
+    "type": "虹口区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 44,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 45,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 16,
+    "fruit": 7,
+    "protein": 2,
+    "carbon": 2
+  },
+  {
+    "序号": 46,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 4,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 47,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 16,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 48,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 20,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 49,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 48,
+    "type": "普陀区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 1,
+    "fruit": 20,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 49,
+    "type": "静安区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 1,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 50,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 4,
+    "protein": 3,
+    "carbon": 1
+  },
+  {
+    "序号": 51,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 15,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 52,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 53,
+    "type": "静安区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 4,
+    "carbon": 3
+  },
+  {
+    "序号": 54,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 9,
+    "protein": 6,
+    "carbon": 5
+  },
+  {
+    "序号": 55,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 56,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 57,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 3,
+    "carbon": 0
+  },
+  {
+    "序号": 58,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 58,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 59,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 4,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 60,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 61,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 62,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 63,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 64,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 65,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 6,
+    "fruit": 2,
+    "protein": 2,
+    "carbon": 2
+  },
+  {
+    "序号": 66,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 6,
+    "fruit": 8,
+    "protein": 4,
+    "carbon": 6
+  },
+  {
+    "序号": 67,
+    "type": "宝山区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 16,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 68,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 69,
+    "type": "宝山区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 5,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 70,
+    "type": "普陀区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 20,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 71,
+    "type": "奉贤区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 14,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 72,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 73,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 74,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "学生",
+    "veg": 4,
+    "fruit": 16,
+    "protein": 8,
+    "carbon": 0
+  },
+  {
+    "序号": 75,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 5,
+    "fruit": 7,
+    "protein": 3,
+    "carbon": 15
+  },
+  {
+    "序号": 76,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 77,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 20,
+    "protein": 19,
+    "carbon": 4
+  },
+  {
+    "序号": 78,
+    "type": "普陀区",
+    "native": "否",
+    "status": "其他",
+    "veg": 5,
+    "fruit": 20,
+    "protein": 8,
+    "carbon": 15
+  },
+  {
+    "序号": 79,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 80,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 3,
+    "carbon": 0
+  },
+  {
+    "序号": 81,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 3,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 82,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 83,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 8,
+    "fruit": 9,
+    "protein": 10,
+    "carbon": 11
+  },
+  {
+    "序号": 84,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 2,
+    "fruit": 1,
+    "protein": 1,
+    "carbon": 2
+  },
+  {
+    "序号": 85,
+    "type": "松江区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 85,
+    "type": "松江区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 86,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 87,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 88,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 2,
+    "fruit": 14,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 89,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "学生",
+    "veg": 7,
+    "fruit": 18,
+    "protein": 3,
+    "carbon": 1
+  },
+  {
+    "序号": 90,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 8,
+    "protein": 6,
+    "carbon": 0
+  },
+  {
+    "序号": 91,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 92,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 3,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 93,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 94,
+    "type": "徐汇区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 95,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 96,
+    "type": "松江区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 97,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 98,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 20,
+    "protein": 10,
+    "carbon": 1
+  },
+  {
+    "序号": 99,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "学生",
+    "veg": 16,
+    "fruit": 9,
+    "protein": 11,
+    "carbon": 10
+  },
+  {
+    "序号": 100,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 6,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 101,
+    "type": "虹口区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 14,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 102,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 5,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 103,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 104,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 105,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 106,
+    "type": "奉贤区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 8,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 107,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 1,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 108,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "学生",
+    "veg": 4,
+    "fruit": 4,
+    "protein": 5,
+    "carbon": 4
+  },
+  {
+    "序号": 109,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 12,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 110,
+    "type": "静安区",
+    "native": "是",
+    "status": "老人",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 111,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 112,
+    "type": "宝山区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 113,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "其他",
+    "veg": 1,
+    "fruit": 4,
+    "protein": 2,
+    "carbon": 12
+  },
+  {
+    "序号": 114,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 5,
+    "fruit": 12,
+    "protein": 4,
+    "carbon": 1
+  },
+  {
+    "序号": 115,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 116,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 117,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 118,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 20,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 119,
+    "type": "虹口区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 120,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 121,
+    "type": "宝山区",
+    "native": "是",
+    "status": "老人",
+    "veg": 1,
+    "fruit": 8,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 122,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 123,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 124,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 2,
+    "carbon": 2
+  },
+  {
+    "序号": 125,
+    "type": "闵行区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 126,
+    "type": "松江区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 20,
+    "protein": 16,
+    "carbon": 0
+  },
+  {
+    "序号": 127,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 128,
+    "type": "徐汇区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 129,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 13,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 130,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 131,
+    "type": "金山区",
+    "native": "是",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 132,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "老人",
+    "veg": 1,
+    "fruit": 17,
+    "protein": 20,
+    "carbon": 5
+  },
+  {
+    "序号": 133,
+    "type": "黄浦区",
+    "native": "是",
+    "status": "老人",
+    "veg": 18,
+    "fruit": 20,
+    "protein": 20,
+    "carbon": 7
+  },
+  {
+    "序号": 134,
+    "type": "黄浦区",
+    "native": "是",
+    "status": "老人",
+    "veg": 11,
+    "fruit": 20,
+    "protein": 19,
+    "carbon": 17
+  },
+  {
+    "序号": 135,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 11,
+    "fruit": 15,
+    "protein": 11,
+    "carbon": 2
+  },
+  {
+    "序号": 136,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 0,
+    "protein": 3,
+    "carbon": 0
+  },
+  {
+    "序号": 137,
+    "type": "宝山区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 2,
+    "fruit": 2,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 138,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 139,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 140,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 141,
+    "type": "闵行区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 142,
+    "type": "奉贤区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 143,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "其他",
+    "veg": 2,
+    "fruit": 7,
+    "protein": 20,
+    "carbon": 1
+  },
+  {
+    "序号": 144,
+    "type": "黄浦区",
+    "native": "否",
+    "status": "孕妇",
+    "veg": 6,
+    "fruit": 6,
+    "protein": 7,
+    "carbon": 5
+  },
+  {
+    "序号": 145,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 6,
+    "fruit": 10,
+    "protein": 3,
+    "carbon": 1
+  },
+  {
+    "序号": 146,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 147,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 148,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 149,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 2,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 150,
+    "type": "闵行区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 151,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 2,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 152,
+    "type": "青浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 20,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 153,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 2,
+    "protein": 3,
+    "carbon": 0
+  },
+  {
+    "序号": 154,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 1,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 155,
+    "type": "青浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 6,
+    "fruit": 20,
+    "protein": 7,
+    "carbon": 4
+  },
+  {
+    "序号": 156,
+    "type": "普陀区",
+    "native": "是",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 1,
+    "fruit": 3,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 157,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 4
+  },
+  {
+    "序号": 158,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 159,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 160,
+    "type": "徐汇区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 3,
+    "carbon": 3
+  },
+  {
+    "序号": 161,
+    "type": "松江区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 12,
+    "protein": 3,
+    "carbon": 0
+  },
+  {
+    "序号": 162,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 163,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 5,
+    "fruit": 9,
+    "protein": 4,
+    "carbon": 3
+  },
+  {
+    "序号": 164,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 0,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 165,
+    "type": "徐汇区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 20
+  },
+  {
+    "序号": 166,
+    "type": "黄浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 7,
+    "fruit": 5,
+    "protein": 6,
+    "carbon": 1
+  },
+  {
+    "序号": 167,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 4,
+    "carbon": 0
+  },
+  {
+    "序号": 168,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 169,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 6,
+    "protein": 3,
+    "carbon": 11
+  },
+  {
+    "序号": 170,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 4,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 171,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "其他",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 172,
+    "type": "松江区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 173,
+    "type": "普陀区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 1,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 174,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 175,
+    "type": "青浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 176,
+    "type": "普陀区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 177,
+    "type": "宝山区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 178,
+    "type": "松江区",
+    "native": "否",
+    "status": "其他",
+    "veg": 3,
+    "fruit": 20,
+    "protein": 13,
+    "carbon": 2
+  },
+  {
+    "序号": 179,
+    "type": "静安区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 180,
+    "type": "静安区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 13,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 181,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 4,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 182,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 2,
+    "protein": 4,
+    "carbon": 6
+  },
+  {
+    "序号": 183,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 20,
+    "protein": 2,
+    "carbon": 2
+  },
+  {
+    "序号": 184,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 185,
+    "type": "普陀区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 186,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "其他",
+    "veg": 1,
+    "fruit": 20,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 187,
+    "type": "普陀区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 6,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 188,
+    "type": "静安区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 6,
+    "protein": 0,
+    "carbon": 1
+  },
+  {
+    "序号": 189,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 190,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 1
+  },
+  {
+    "序号": 191,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 192,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 4
+  },
+  {
+    "序号": 193,
+    "type": "松江区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 194,
+    "type": "黄浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 195,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 4,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 196,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 1,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 197,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 198,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 199,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 200,
+    "type": "宝山区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 4,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 201,
+    "type": "虹口区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 202,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 203,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 204,
+    "type": "松江区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 4,
+    "protein": 3,
+    "carbon": 2
+  },
+  {
+    "序号": 205,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 206,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 207,
+    "type": "松江区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 208,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 4,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 209,
+    "type": "浦东新区",
+    "native": "是",
+    "status": "其他",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 210,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 19,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 211,
+    "type": "宝山区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 212,
+    "type": "嘉定区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 16,
+    "protein": 5,
+    "carbon": 0
+  },
+  {
+    "序号": 213,
+    "type": "长宁区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 8,
+    "fruit": 10,
+    "protein": 8,
+    "carbon": 0
+  },
+  {
+    "序号": 214,
+    "type": "嘉定区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 20,
+    "fruit": 20,
+    "protein": 20,
+    "carbon": 20
+  },
+  {
+    "序号": 215,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 9,
+    "fruit": 20,
+    "protein": 10,
+    "carbon": 1
+  },
+  {
+    "序号": 216,
+    "type": "宝山区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 11,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 217,
+    "type": "宝山区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 218,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 219,
+    "type": "嘉定区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 4,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 220,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 12,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 221,
+    "type": "普陀区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 222,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 223,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 224,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 225,
+    "type": "闵行区",
+    "native": "是",
+    "status": "学生",
+    "veg": 2,
+    "fruit": 14,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 226,
+    "type": "松江区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 227,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 3,
+    "fruit": 5,
+    "protein": 2,
+    "carbon": 0
+  },
+  {
+    "序号": 228,
+    "type": "杨浦区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 229,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 230,
+    "type": "闵行区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 231,
+    "type": "虹口区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 232,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 8,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 233,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 234,
+    "type": "普陀区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 4,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 235,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 13,
+    "protein": 5,
+    "carbon": 2
+  },
+  {
+    "序号": 236,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 237,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 6,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 238,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 2,
+    "fruit": 12,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 239,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 1,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 240,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 6,
+    "fruit": 14,
+    "protein": 10,
+    "carbon": 10
+  },
+  {
+    "序号": 241,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 15,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 242,
+    "type": "闵行区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 243,
+    "type": "闵行区",
+    "native": "是",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 244,
+    "type": "徐汇区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 245,
+    "type": "长宁区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 246,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 8,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 247,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 248,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 249,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 250,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 251,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 252,
+    "type": "闵行区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 20,
+    "fruit": 20,
+    "protein": 3,
+    "carbon": 4
+  },
+  {
+    "序号": 253,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 7,
+    "fruit": 9,
+    "protein": 6,
+    "carbon": 2
+  },
+  {
+    "序号": 254,
+    "type": "闵行区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 20,
+    "protein": 20,
+    "carbon": 2
+  },
+  {
+    "序号": 255,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 5,
+    "fruit": 4,
+    "protein": 3,
+    "carbon": 4
+  },
+  {
+    "序号": 256,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 257,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 20,
+    "fruit": 20,
+    "protein": 20,
+    "carbon": 20
+  },
+  {
+    "序号": 258,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 20,
+    "fruit": 20,
+    "protein": 20,
+    "carbon": 20
+  },
+  {
+    "序号": 259,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 260,
+    "type": "闵行区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 3,
+    "fruit": 9,
+    "protein": 13,
+    "carbon": 0
+  },
+  {
+    "序号": 261,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 4,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 262,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 6,
+    "fruit": 5,
+    "protein": 5,
+    "carbon": 5
+  },
+  {
+    "序号": 263,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 1,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 264,
+    "type": "闵行区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 265,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 266,
+    "type": "闵行区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 2,
+    "fruit": 4,
+    "protein": 2,
+    "carbon": 2
+  },
+  {
+    "序号": 267,
+    "type": "闵行区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 268,
+    "type": "虹口区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 269,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 4,
+    "protein": 4,
+    "carbon": 4
+  },
+  {
+    "序号": 270,
+    "type": "青浦区",
+    "native": "否",
+    "status": "其他",
+    "veg": 6,
+    "fruit": 2,
+    "protein": 2,
+    "carbon": 2
+  },
+  {
+    "序号": 271,
+    "type": "静安区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 6,
+    "fruit": 7,
+    "protein": 5,
+    "carbon": 1
+  },
+  {
+    "序号": 272,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 273,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 20,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 274,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 4,
+    "fruit": 4,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 275,
+    "type": "宝山区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 3,
+    "carbon": 0
+  },
+  {
+    "序号": 276,
+    "type": "长宁区",
+    "native": "否",
+    "status": "学生",
+    "veg": 0,
+    "fruit": 20,
+    "protein": 6,
+    "carbon": 0
+  },
+  {
+    "序号": 277,
+    "type": "浦东新区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 7,
+    "protein": 2,
+    "carbon": 1
+  },
+  {
+    "序号": 29,
+    "type": "普陀区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 9,
+    "fruit": 9,
+    "protein": 9,
+    "carbon": 8
+  },
+  {
+    "序号": 110,
+    "type": "静安区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 125,
+    "type": "闵行区",
+    "native": "是",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 7,
+    "protein": 1,
+    "carbon": 0
+  },
+  {
+    "序号": 132,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "工薪族",
+    "veg": 1,
+    "fruit": 17,
+    "protein": 20,
+    "carbon": 5
+  },
+  {
+    "序号": 134,
+    "type": "黄浦区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 11,
+    "fruit": 20,
+    "protein": 19,
+    "carbon": 17
+  },
+  {
+    "序号": 146,
+    "type": "宝山区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 3,
+    "protein": 1,
+    "carbon": 1
+  },
+  {
+    "序号": 172,
+    "type": "松江区",
+    "native": "是",
+    "status": "工薪族",
+    "veg": 0,
+    "fruit": 2,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 196,
+    "type": "杨浦区",
+    "native": "是",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 1,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 222,
+    "type": "徐汇区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 231,
+    "type": "虹口区",
+    "native": "是",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 0,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 241,
+    "type": "闵行区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 0,
+    "fruit": 15,
+    "protein": 0,
+    "carbon": 0
+  },
+  {
+    "序号": 269,
+    "type": "普陀区",
+    "native": "否",
+    "status": "一线工作者（如大白、志愿者、骑手等）",
+    "veg": 4,
+    "fruit": 4,
+    "protein": 4,
+    "carbon": 4
+  }
+]

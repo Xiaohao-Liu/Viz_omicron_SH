@@ -4,20 +4,21 @@
 import sec1 from './components/sec1.vue'
 import mainpart from './components/mainpart.vue'
 import sec2 from './components/sec2.vue'
+import sec3 from './components/sec3.vue'
 
 import {ref} from 'vue';
-
 </script>
 
 <template>
   <sec-1 @_show_story="_show_story"/>
-  <mainpart v-if="show_story"/>
+  <!-- <mainpart v-if="show_story"/> -->
   <sec-2 v-if="show_story"/>
+  <sec-3 v-if="show_story"></sec-3>
 </template>
 
 <script>
 export default {
-  components: { mainpart },
+  components: { mainpart, sec3, sec2 },
   data(){
     return {
       show_story: false 
