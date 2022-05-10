@@ -72,7 +72,7 @@ const count = ref("0")
     </div>
     <div class="options" style="margin:100px atuo;">
         <p><span class="ref">如果你有什么故事想要分享，可以点击按钮填写问卷</span></p>
-        <a style="float:none;margin:20px auto;" href="https://www.wjx.cn/vj/QoV3Siq.aspx">点击填写问卷</a>
+        <a style="float:none;margin:20px auto;" target="_blank" href="https://www.wjx.cn/vj/QoV3Siq.aspx">点击填写问卷</a>
     </div>
 
     <div class="content-div">

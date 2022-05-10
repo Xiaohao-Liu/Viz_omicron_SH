@@ -107,7 +107,7 @@ onMounted(()=>{
 
       </div>
     </div>
-    <div class="options"><a id='database_button' href="http://120.77.96.185/">查看求助信息</a>
+    <div class="options"><a id='database_button' href="http://120.77.96.185/" target="_blank">查看求助信息</a>
         <div class="scrolldown" @click="_show_story"><a href="#story">阅读故事</a></div>
     </div>
     <div class="chart-div" id="bottom" ></div>
