@@ -28,6 +28,20 @@ body{
   color:$color;
   background:$bg-color; 
   overflow-x: hidden;
+  position: relative;
+}
+body::after{
+  content: "";
+  position: fixed;
+  top:0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-image: url('./images/all/bg_pic.png');
+  z-index: -1;
 }
 img{vertical-align:top;}
 a img{border:none;}
@@ -44,8 +58,8 @@ ul,li{list-style:none}
 .cover-bg{ position: absolute; z-index: -1; top:0; left:0; width: 1200px; height: auto}
 .cover-bg img{position: absolute; display: none; }
 .content-div{padding-top: 10px; padding-bottom: 10px; position: relative; width: 100%; height: auto}
-.content-wrap{width: 640px; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;}
-.content-wrap p{padding-top: 15px; padding-bottom: 15px}
+.content-wrap{width: 640px; margin:0 auto; font-size: $font-size; line-height: 28px; text-align: left;}
+.content-wrap p{padding-top: 15px; padding-bottom: 15px; text-align: justify;}
 /* .content-wrap .subtitle span{border-bottom: 2px #000 solid; padding-bottom: 4px; font-weight: 900} */
 .content-wrap .subtitle{color:$color; font-size: 18px; font-weight: bolder; text-align: center; }
 .content-wrap .caption{color:$color; font-size: 12px; line-height: 20px; width: 70%; margin:0 auto;}
@@ -100,7 +114,8 @@ ul,li{list-style:none}
     .step {
         margin: 0 auto 2rem auto;
         color: $color;
-        /* background-color: #3b3b3b; */
+        // background-color: #DBC1AF;
+        // border-radius: 10px;
     }
 
     .step:last-child {
@@ -129,13 +144,19 @@ ul,li{list-style:none}
   
 }
 
+.ref{
+  // font-style: italic;
+  font-size: 12pt !important;
+  // font-weight: bold;
+  font-family: 'KaiTi';
+}
 
 @media (max-width: 640px){
   body{overflow-x: hidden;}
   .mobile-only{display: block}
   .pc-only{display:none;}
 
-  .content-wrap{width: 90%; margin:0 auto; font-size: 16px; line-height: 28px; text-align: left;overflow-x: hidden;}
+  .content-wrap{width: 90%; margin:0 auto; font-size: $font-size; line-height: 28px; text-align: left;overflow-x: hidden;}
   .chart-div{width: 90%;overflow-x: hidden; margin:0 auto;}
   .chart-scroll-wrap{width: 90%; margin:0 auto;}
   .chart-scroll-wrap{ overflow-x: scroll; }

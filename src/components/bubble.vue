@@ -36,8 +36,8 @@ function myfunc(div){
     .attr("height", height)
     .attr("transform", 'translate('+marginLeft+' '+marginTop+')');
 
-    let scaleX = d3.scaleLinear().range([0, width]).domain([0, 20]);
-    let scaleR = d3.scaleLinear().range([0, 20]).domain([0, Math.sqrt(179)]);//把数据求根，让圆的面积差距小一点
+    let scaleX = d3.scaleLinear().range([1, width]).domain([1, 20]);
+    let scaleR = d3.scaleLinear().range([0, 30]).domain([0, Math.sqrt(179)]);//把数据求根，让圆的面积差距小一点
     const data = bubble;
         data.forEach(e => {
             e.veg = +e.veg;
@@ -93,7 +93,7 @@ function myfunc(div){
         })
         .attr("cy", "50")
         .attr("r", d => scaleR(Math.sqrt(d)))
-        .attr("fill", "#22925c")
+        .attr("fill", "#22925cbb")
         // .on("mouseover", mouseover)
         // .on("mousemove", mousemove)
         // .on("mouseout", mouseout)
@@ -109,7 +109,7 @@ function myfunc(div){
         })
         .attr("cy", "150")
         .attr("r", d => scaleR(Math.sqrt(d)))
-        .attr("fill", "#ab3921")
+        .attr("fill", "#ab3921bb")
         // .on("mouseover", mouseover)
         // .on("mousemove", mousemove)
         // .on("mouseout", mouseout)
@@ -125,7 +125,7 @@ function myfunc(div){
         })
         .attr("cy", "250")
         .attr("r", d => scaleR(Math.sqrt(d)))
-        .attr("fill", "#d4842b")
+        .attr("fill", "#d4842bbb")
         // .on("mouseover", mouseover)
         // .on("mousemove", mousemove)
         // .on("mouseout", mouseout)
@@ -141,7 +141,7 @@ function myfunc(div){
         })
         .attr("cy", "350")
         .attr("r", d => scaleR(Math.sqrt(d)))
-        .attr("fill", "#fbc909")
+        .attr("fill", "#fbc909bb")
         // .on("mouseover", mouseover)
         // .on("mousemove", mousemove)
         // .on("mouseout", mouseout)
@@ -237,6 +237,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
 <template>
 	<div class="container">
 		<p>如果2022年4月底，在上海</p>
+        <br/>
 		<div class="select-box">
 			你是<select class="small" name="native" id="native" v-model="native">
 			  <option value="0">本地与否</option>
@@ -248,7 +249,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
 			  <option value="0">职业</option>
 			  <option value="工薪族">工薪族</option>
 			  <option value="学生">学生</option>
-			  <option value="一线工作者（如大白、志愿者、骑手等）">一线工作者（如大白、志愿者、骑手等）</option>
+			  <option value="一线工作者（如大白、志愿者、骑手等）">一线工作者</option>
 			  <option value="其他">其他</option>
 			</select>
 		  </div>
@@ -278,16 +279,16 @@ onMounted(()=>{myfunc("#bubble-veg")})
         </div>
 		  <div class="right">
             <h5>
-			<span class="logo veg"></span>您最久已经<span class="max" id='veg' style="background-color:#fff9f0;box-shadow: none;">{{num_veg}}</span>天没吃蔬菜了。
+			<span class="logo veg"></span>您可能已经<span class="max" id='veg' style="background-color:#fff9f0;box-shadow: none;">{{num_veg}}</span>天没吃蔬菜了。 <span class="day">天</span>
 			</h5>
             <h5>
-			<span class="logo protein"></span>您最久已经<span class="max" id="protein" style="background-color:#fff9f0;box-shadow: none;">{{num_protein}}</span>天没吃蛋白质了。
+			<span class="logo protein"></span>您最久已经<span class="max" id="protein" style="background-color:#fff9f0;box-shadow: none;">{{num_protein}}</span>天没吃蛋白质了。 <span class="day">天</span>
 			</h5>
             <h5>
-			<span class="logo fruit"></span>您最久已经<span class="max" id='fruit' style="background-color:#fff9f0;box-shadow: none;">{{num_fruit}}</span>天没吃水果了。
+			<span class="logo fruit"></span>您最久已经<span class="max" id='fruit' style="background-color:#fff9f0;box-shadow: none;">{{num_fruit}}</span>天没吃水果了。 <span class="day">天</span>
 			</h5>
             <h5>
-			<span class="logo carbon"></span>您最久已经<span class="max" id='carbon' style="background-color:#fff9f0;box-shadow: none;">{{num_carbon}}</span>天没吃主食了。
+			<span class="logo carbon"></span>您最久已经<span class="max" id='carbon' style="background-color:#fff9f0;box-shadow: none;">{{num_carbon}}</span>天没吃主食了。 <span class="day">天</span>
 		  </h5>
 		  <div class="chart-div" id="bubble-veg"></div>
           </div>
@@ -300,6 +301,9 @@ onMounted(()=>{myfunc("#bubble-veg")})
     margin-left: calc(-50vw + 325px);
     margin-bottom:50px;
     padding-bottom: 400px;
+    p{
+        font-size:14pt  !important;
+    }
 }
 .chart-div{
     height: 400px;
@@ -328,13 +332,17 @@ onMounted(()=>{myfunc("#bubble-veg")})
     .map{
         height: 300px;
         width: 500px;
-        background: white;
+        // background: white;
+        background-position:center ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image:url('../assets/images/all/map.png');
         margin: 10px auto;
     }
     .chart-div{
         position: absolute;
         top:0px;
-        left:0px;
+        left:00px;
         border:none;
     }
     h5:nth-child(1){
@@ -342,11 +350,25 @@ onMounted(()=>{myfunc("#bubble-veg")})
     }
     h5{
         height: 100px;
-        width: 400px;
+        width: 330px;
         line-height:100px;
         box-sizing: border-box;
         border-bottom:1px solid #aaa;
         position: relative;
+        font-weight: normal;
+        margin-left:60px;
+        .max{
+            font-weight: bold;
+
+        }
+        .day{
+            position:absolute;
+            bottom:-20px;
+            right:-50px;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+        }
         .logo{
             // display: block;
             width:30px;
@@ -376,22 +398,24 @@ onMounted(()=>{myfunc("#bubble-veg")})
     h5:before{
         content:"0";
         position:absolute;
-        bottom:-20px;
-        left:0px;
+        bottom:-40px;
+        left:-50px;
         height: 40px;
         width: 40px;
         line-height: 40px;
-        background: #F2F2F2;
     }
     h5:after{
         content:"20";
         position:absolute;
-        bottom:-20px;
+        bottom:-40px;
         right:-20px;
         height: 40px;
         width: 40px;
         line-height: 40px;
-        background: #F2F2F2;
     }
+}
+.right{
+    width: calc(50vw - 50px);
+    margin-left: 50px;
 }
 </style>

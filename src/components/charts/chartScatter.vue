@@ -168,11 +168,13 @@ defineExpose({
   <div class="chart" id="c5678" ref="chart">
     <div :class="'part '+('part-'+count)"></div>
     
-    <div :class="'point overall ' + (i<55?'food ':'not-food ')" v-for="i in 256" :key="i"/>
+    <div :class="(count>0?'h':'v')">
+      <div :class="'point overall ' + (i<55?'food ':'not-food ')" v-for="i in 256" :key="i"/>
 
-    <div :class="'point inner ' + (i<62?'manage ':'not-manage ')" v-for="i in 256" :key="i"/>
+      <div :class="'point inner ' + (i<62?'manage ':'not-manage ')" v-for="i in 256" :key="i"/>
 
-    <div :class="'point inner2 ' + (i<250?'manage2 ':'not-manage2 ') + ((i<=254 && i >=250)?'r ':'')" v-for="i in 256" :key="i"/>
+      <div :class="'point inner2 ' + (i<250?'manage2 ':'not-manage2 ') + ((i<=254 && i >=250)?'r ':'')" v-for="i in 256" :key="i"/>
+    </div>
   </div>
 </template>
 
@@ -211,22 +213,30 @@ defineExpose({
     opacity: 0;
   }
   .point.status2{
-    background: #c4a892;
+    background: #bf7441;
   }
   .point.status3{
     background: #aa351b;
   }
 }
 .part{
-  width: 100%;
+  width: 600px;
     background-size: cover;
-    height: 100%;
-    background-color:$bg-color;
+    height: 600px;
+    // background-color:$bg-color;
     position: absolute;
     z-index: 100;
-    background-position: center;
+    margin:-50px;
+    // background-position: center;
     background-repeat: no-repeat;
     transition:ease .5s;
+    background-position: left;
+}
+.v{
+  opacity:1;
+}
+.h{
+  opacity:0;
 }
 .part.part-0{
   opacity:0;
@@ -246,4 +256,20 @@ defineExpose({
 .part.part-5{
   background-image: url('../../assets/images/all/part1_3_05.png');
 }
+.part.part-6{
+  background-image: url('../../assets/images/all/part2_people01.png');
+}
+.part.part-7{
+  background-image: url('../../assets/images/all/part2_people02.png');
+}
+.part.part-8{
+  background-image: url('../../assets/images/all/part2_people03.png');
+}
+.part.part-9{
+  background-image: url('../../assets/images/all/part2_people04.png');
+}
+.part.part-10{
+  background-image: url('../../assets/images/all/part2_people05.png');
+}
+
 </style>

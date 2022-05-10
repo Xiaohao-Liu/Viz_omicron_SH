@@ -5,6 +5,7 @@ import sec1 from './components/sec1.vue'
 import mainpart from './components/mainpart.vue'
 import sec2 from './components/sec2.vue'
 import sec3 from './components/sec3.vue'
+import sec4 from './components/sec4.vue'
 
 import {ref} from 'vue';
 </script>
@@ -14,6 +15,7 @@ import {ref} from 'vue';
   <!-- <mainpart v-if="show_story"/> -->
   <sec-2 v-if="show_story"/>
   <sec-3 v-if="show_story"></sec-3>
+  <sec-4 v-if="show_story"></sec-4>
 </template>
 
 <script>
@@ -21,7 +23,7 @@ export default {
   components: { mainpart, sec3, sec2 },
   data(){
     return {
-      show_story: false 
+      show_story: true 
     }
   },
   methods:{
@@ -35,4 +37,7 @@ export default {
 <style lang="scss">
 @import "assets/global.scss";
 @import "assets/landing.scss";
+body::after{
+  background-image: url('./assets/images/all/bg_pic.png');
+}
 </style>

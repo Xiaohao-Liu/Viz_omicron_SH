@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   z-index: 40;
-  width:  520px;
+  width:  440px;
   margin: 0 auto;
   font-weight: 400;
   max-width: 720px;
@@ -39,8 +39,8 @@
   position: relative;
   display: inline-block;
   float: left;
-  width: 200px;
-  padding: 10px 8px;
+  width: 160px;
+  padding: 5px 5px;
   font-size: 0.925em;
   text-align: center;
   margin: 20px;
@@ -50,6 +50,12 @@
   font-weight: 400;
   font-family: 'Roboto', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   margin-top: 1em;
-  background: #F9D7C0;
+  background: white;
+  border-radius: 10px;
+  border:1px solid #504235;
 }
 
+.options a:hover{
+  color: white;
+  background: #99260b;
+}
