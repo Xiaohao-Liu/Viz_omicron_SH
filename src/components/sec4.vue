@@ -67,7 +67,6 @@ onMounted(()=>{
               <p>解封后最想吃水果、零食、蔬菜</p>
       </div>
 	</div>
-<div class="chart-div" id="want_to_eat" ></div>
 
     <div class="content-div">
       <div class="content-wrap">

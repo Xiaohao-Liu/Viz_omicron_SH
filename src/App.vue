@@ -23,7 +23,7 @@ export default {
   components: { mainpart, sec3, sec2 },
   data(){
     return {
-      show_story: true 
+      show_story: false 
     }
   },
   methods:{
