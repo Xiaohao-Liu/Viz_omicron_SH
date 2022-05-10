@@ -146,9 +146,54 @@ function step_4(){
   // --- 
   box.value.selectAll('.inner2.r')
   .classed('status3', false)
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
 
 }
 function step_5(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
+
+  box.value.selectAll('.inner2.veg')
+  .classed('status4', true)
+}
+function step_6(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
+  box.value.selectAll('.inner2.staple_food')
+  .classed('status4', true)
+}
+function step_7(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
+  box.value.selectAll('.inner2.fresh')
+  .classed('status4', true)
+  box.value.selectAll('.inner2.water')
+  .classed('status4', true)
+}
+function step_8(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
+  box.value.selectAll('.inner2.baby_related')
+  .classed('status4', true)
+  box.value.selectAll('.inner2.nourishment')
+  .classed('status4', true)
+}
+function step_9(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
+  box.value.selectAll('.inner2.other')
+  .classed('status4', true)
+}
+function step_10(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
+  box.value.selectAll('.inner2.pet')
+  .classed('status4', true)
+}
+function step_11(){
+  box.value.selectAll('.inner2')
+  .classed('status4', false)
   box.value.selectAll('.inner2.r')
   .classed('status3', true)
 }
@@ -161,7 +206,7 @@ function stop_img(){
 
 onMounted(()=>{init()})
 defineExpose({ 
-    step_0, step_1, step_2, step_3, step_4, step_5, step_img, stop_img
+    step_0, step_1, step_2, step_3, step_4, step_5, step_6,step_7,step_8,step_9,step_11,step_10,step_img, stop_img
 })
 </script>
 <template>
@@ -173,7 +218,18 @@ defineExpose({
 
       <div :class="'point inner ' + (i<62?'manage ':'not-manage ')" v-for="i in 256" :key="i"/>
 
-      <div :class="'point inner2 ' + (i<250?'manage2 ':'not-manage2 ') + ((i<=254 && i >=250)?'r ':'')" v-for="i in 256" :key="i"/>
+      <!-- <div :class="'point inner2 ' + (i<250?'manage2 ':'not-manage2 ') + ((i<=254 && i >=250)?'r ':'')" v-for="i in 256" :key="i"/> -->
+      <div class='point inner2 manage2 veg' v-for="i in 60" :key="i"/>
+      <div class='point inner2 manage2 staple_food' v-for="i in 42" :key="i"/>
+      <div class='point inner2 manage2 fresh' v-for="i in 32" :key="i"/>
+      <div class='point inner2 manage2 water' v-for="i in 33" :key="i"/>
+      <div class='point inner2 manage2 baby_related' v-for="i in 24" :key="i"/>
+      <div class='point inner2 manage2 nourishment' v-for="i in 25" :key="i"/>
+      <div class='point inner2 manage2 other' v-for="i in 4" :key="i"/>
+      <div class='point inner2 manage2 pet' v-for="i in 2" :key="i"/>
+      <div class='point inner2 manage2' v-for="i in 11" :key="i"/>
+      <div class='point inner2 not-manage2 r' v-for="i in 5" :key="i"/>
+      <div class='point inner2 not-manage2' v-for="i in 2" :key="i"/>
     </div>
   </div>
 </template>
@@ -186,7 +242,6 @@ defineExpose({
   position: relative;
   /* transform: rotate(90deg); */
   .point{
-    background: #d3d3d3;
     position: absolute;
     height: 14px;
     width: 14px;
@@ -195,17 +250,20 @@ defineExpose({
     top: 0px;
     z-index: 3;
     transition: ease 1s;
+    box-sizing: border-box;
+    background:transparent;
+    border:7px solid #d3d3d3;
   }
   .point.inner{
     z-index: 2;
-    background: #9e9e9d;
+    border-color: #9e9e9d;
   }
   .point.inner2{
     z-index: 1;
-    background: #9e9e9d;
+    border-color: #9e9e9d;
   }
   .point.status1{
-    background: #9e9e9d;
+    border-color: #9e9e9d;
   }
   .point.fade{
     transition: 1.5s;
@@ -213,10 +271,16 @@ defineExpose({
     opacity: 0;
   }
   .point.status2{
-    background: #bf7441;
+    border-color: #bf7441;
   }
   .point.status3{
-    background: #aa351b;
+    border-color: #aa351b;
+  }
+  .point.status4{
+    // background: #aa351b;
+    transform:scale(1.1);
+    // box-shadow:0px 0px 0px 5px #bf7341;
+    border:2px solid #bf7441;
   }
 }
 .part{

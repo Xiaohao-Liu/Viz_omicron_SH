@@ -253,7 +253,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
 			  <option value="其他">其他</option>
 			</select>
 		  </div>
-        <div style="height:100px;" margin></div>
+        <div style="height:50px;" margin></div>
         <div class="left">
 		<div class="select-box">居住在
         <select class="small" name="type" id="type" v-model="type">
@@ -328,7 +328,8 @@ onMounted(()=>{myfunc("#bubble-veg")})
     float: left;
     position: relative;
     height: 400px;
-    width: 50vw;
+    width: 30vw;
+    margin-left:10vw;
     .map{
         height: 300px;
         width: 500px;
