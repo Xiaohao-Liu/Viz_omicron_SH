@@ -306,6 +306,8 @@ defineExpose({
   opacity:0;
 }
 .part.part-1{
+  width: 600px;
+  height: 600px;
   background-image: url('../../assets/images/all/part1_3_01.png');
 }
 .part.part-2{

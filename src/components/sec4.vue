@@ -49,8 +49,8 @@ const count = ref("0")
     <div class="content-div">
       <div class="content-wrap">
               <!-- <p class="subtitle"><span>物资</span></p> -->
-              <p>“没有食欲，一天只能吃一两顿”</p>
-            <p>除了身体健康受到影响，产生肠胃问题之外，饮食状况也给很多上海民众带来心理层面的压抑。并会因此没有胃口，主动减少饮食摄入。如此循环往复，身体和心理都释放出问题信号。
+              <p>“没有食欲，一天只能吃一两顿。”</p>
+            <p>除了身体健康受到影响，产生肠胃问题之外，饮食状况也给很多上海民众带来心理层面的压抑,并会因此没有胃口，主动减少饮食摄入。如此循环往复，上海民众的身体和心理都释放出了问题信号。
             </p>
       </div>
 	</div>
@@ -67,11 +67,12 @@ const count = ref("0")
               <p>上海在2022年春天的故事还没讲完。</p>
               <p>所有人都期待着，那一天的到来——可以自由吃水果、零食和蔬菜的一天。</p>
 
+              <p>文中受访者小王、小壮、小佳、何风等均系化名<br/>“——松江区 6219”等指在整个求助列表中的地区来源和编号</p>
       </div>
     </div>
-    <div class="options" style="margin:30px atuo;">
-        <p>如果你有什么故事想要分享，可以点击按钮填写问卷</p>
-        <a style="float:none;margin:20px auto;" href="https://www.wjx.cn/vj/QoV3Siq.aspx">查看求助信息</a>
+    <div class="options" style="margin:100px atuo;">
+        <p><span class="ref">如果你有什么故事想要分享，可以点击按钮填写问卷</span></p>
+        <a style="float:none;margin:20px auto;" href="https://www.wjx.cn/vj/QoV3Siq.aspx">点击填写问卷</a>
     </div>
 
     <div class="content-div">
@@ -84,10 +85,11 @@ const count = ref("0")
                 <p><strong>参考资料：</strong>
                 <br/>上海市第七次人口普查数据</p>
 
-                <p><br/></p>
+                <!-- <p><br/></p> -->
                 <p><strong>指导老师</strong>：叶韦明</p>
                 <p><strong>北京大学财经传媒出品</strong></p>
-
+                <p><br/></p> 
+                <p><br/></p> 
         </div>
     </div>
     

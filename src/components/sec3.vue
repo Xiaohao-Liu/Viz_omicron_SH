@@ -225,14 +225,15 @@ figure{
   box-sizing: border-box;
   div{
     width: calc(25% - 10px);
-    height: 40px;
+    height: 35px;
 
-    background: $button-unchecked;
+    background: white;
+    color:$button-checked-red;
     float:left;
-    font-size: 14pt;
+    font-size: 16px;
     margin:5px 5px;
     border-radius: 5px;
-    line-height: 40px;
+    line-height: 35px;
   }
   div.active{
     background: $button-checked-red;
@@ -243,7 +244,7 @@ figure{
   position: fixed;
   top:5px;
   right: 50px;
-  width: 500px;
+  width: 45vw;
   z-index: 3;
 }
 .image{
@@ -256,6 +257,7 @@ figure{
   .t{
       font-size: 14px !important;
       width: 100%;
+      font-weight: bold;
       text-align: center;
       color:#666;
     }
@@ -278,18 +280,19 @@ figure{
   background-image:url('../assets/images/all/part2_bar3.png');
 }
 .slide-bar{
-    width:500px;
+    width: 45vw;
     position: absolute;
     right:50px;
     background: transparent;
     border: none;
 }
 #right-slide-bar{
-  background-color: white;
+  // background-color: white;
+  background-color: rgba(0,0,0,.2);
   height: 650vh;
   position: absolute;
   right:50px;
-  width: 500px;
+  width: 45vw;
   margin-top: -50vh;
 }
 .part-0{
