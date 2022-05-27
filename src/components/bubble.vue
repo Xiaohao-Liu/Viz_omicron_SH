@@ -343,7 +343,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
     .chart-div{
         position: absolute;
         top:0px;
-        left:00px;
+        left:0px;
         border:none;
     }
     h5:nth-child(1){
@@ -418,5 +418,35 @@ onMounted(()=>{myfunc("#bubble-veg")})
 .right{
     width: calc(50vw - 50px);
     margin-left: 50px;
+}
+
+@media (max-width: 640px){
+  .container{
+      width: 100%;
+      margin:0px;
+      padding-bottom: 50px;
+  }
+  .right, .left{
+    float:none ;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-left:0vw;
+    .map{
+        width: 100%;
+    }
+     .chart-div{
+        position: absolute;
+        top:40px;
+        left:-40px;
+        border:none;
+     }
+     h5{
+         margin-left: 40px;
+     }
+    }
+    .right h5:nth-child(1){
+        margin-top:-40px;
+    }
 }
 </style>

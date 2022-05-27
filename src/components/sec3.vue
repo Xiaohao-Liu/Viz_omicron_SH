@@ -310,4 +310,44 @@ figure{
 .part-4{
   background-image: url('../assets/images/all/part2_04.png');
 }
+@media (max-width: 640px){
+  section{
+    width: calc(100% - 20px);
+    margin:auto;
+}
+
+.title02{
+  background-position:left;
+}
+.left{
+  width: 500px;
+  margin:calc(50% - 250px);
+  transform: scale(0.8);
+  background-size:850px;
+  .part{
+    height: 500px;
+    width: 500px;
+  }
+}
+.right{
+  width:calc(100% - 40px);
+  margin-left: 20px;
+  box-sizing: border-box;
+  
+}
+.right.slide-bar{
+  width: 100%;
+  margin:0px;
+  right: 0px;
+}
+#right-slide-bar{
+  width: calc(100% + 20px);
+  right: -10px;
+  .tab-bar{
+   width: calc(100% - 10px);
+   top:30px;
+   right: 10px;
+  }
+}
+}
 </style>

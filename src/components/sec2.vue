@@ -530,4 +530,44 @@ figure{
   width: 45vw;
   margin-top:-10vh;
 }
+
+@media (max-width: 640px){
+  section{
+    width: calc(100% - 20px);
+    margin:auto;
+}
+
+.title01{
+  background-position:left;
+}
+.left{
+  width: 500px;
+  margin:calc(50% - 250px);
+  transform: scale(0.8);
+  .part{
+    height: 500px;
+    width: 500px;
+  }
+}
+.right{
+  width:calc(100% - 40px);
+  margin-left: 20px;
+  box-sizing: border-box;
+  
+}
+.right.slide-bar{
+  width: 100%;
+  margin:0px;
+  right: 0px;
+}
+#right-slide-bar{
+  width: calc(100% + 20px);
+  right: -10px;
+  .tab-bar{
+   width: calc(100% - 20px);
+   top:10px;
+   right: 10px;
+  }
+}
+}
 </style>

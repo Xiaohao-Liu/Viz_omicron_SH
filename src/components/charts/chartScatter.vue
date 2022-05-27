@@ -284,7 +284,7 @@ defineExpose({
   }
 }
 .part{
-  width: 600px;
+    width: 600px;
     background-size: cover;
     height: 600px;
     // background-color:$bg-color;
@@ -338,4 +338,14 @@ defineExpose({
   background-image: url('../../assets/images/all/part2_people05.png');
 }
 
+@media (max-width: 640px){
+  .point{
+    margin:10px;
+  }
+  .part{
+      width: 500px !important;
+      height: 500px !important;
+      margin: 0px;
+  }
+}
 </style>

@@ -187,4 +187,25 @@ figure{
 // .part-6{
 //   background-image: url('../assets/images/all/timeline07.png');
 // }
+@media (max-width: 640px){
+  section{
+    width: calc(100% - 20px);
+    margin:auto;
+}
+
+figure.part{
+    width: 100%;
+    background-size: 450px;
+    top: 12vh;
+    margin: 0px;
+}
+
+.scrolldown {
+  display: flex;
+  a{
+    margin: auto;
+  }
+}
+
+}
 </style>

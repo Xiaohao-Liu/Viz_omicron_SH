@@ -158,4 +158,26 @@ figure{
     font-size: 10pt;
     text-align: center;
 }
+
+@media (max-width: 640px){
+  section{
+    width: calc(100% - 20px);
+    margin:auto;
+}
+
+figure.part{
+    width: 100%;
+    background-size: 450px;
+    top: 12vh;
+    margin: 0px;
+}
+
+.scrolldown {
+  display: flex;
+  a{
+    margin: auto;
+  }
+}
+
+}
 </style>
