@@ -12,7 +12,6 @@ import {ref} from 'vue';
 
 <template>
   <sec-1 @_show_story="_show_story"/>
-  <!-- <mainpart v-if="show_story"/> -->
   <sec-2 v-if="show_story"/>
   <sec-3 v-if="show_story"></sec-3>
   <sec-4 v-if="show_story"></sec-4>
@@ -23,7 +22,7 @@ export default {
   components: { mainpart, sec3, sec2 },
   data(){
     return {
-      show_story: false 
+      show_story: false
     }
   },
   methods:{

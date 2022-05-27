@@ -54,7 +54,7 @@ const scatter = ref()
                   if(resp.index==base + 21){scatter.value.step_img(9);tab.value=3; return}
                   if(resp.index==base + 22){scatter.value.step_img(10);tab.value=3.2; return}
                 }).onStepExit((resp) => {
-                    if(resp.index==5 && tab.value==1){tab.value=0; return}
+                    if(resp.index==12 && tab.value==1){tab.value=0; return}
                     // if(resp.index==7 && tab.value==3){scatter.value.stop_img(); return}
                     if(resp.index==22 && tab.value==3.2){tab.value=0; return}
                   });
@@ -161,7 +161,7 @@ onMounted(()=>{init();})
                 <p>另外，0.8%的求助者为自己的宠物发布的求助信息。这些求助者有的在封控时恰好不在家，无法照顾，有的是宠物食物已经耗尽。</p>
               </div>
           </div>
-          <div id="right-slide-bar" ref="slide_bar_container">
+          <div class="right-slide-bar" ref="slide_bar_container">
             <div :class="'tab-bar '+(tab>0?'fixed':'')" ref="tab_bar">
               <div :class="parseInt(tab)==i?'active':''" v-for="i in 3" :key="i"></div>
             </div>
@@ -169,6 +169,8 @@ onMounted(()=>{init();})
             <div class="step temp_step" data-step="1"></div>
             <div class="step temp_step" data-step="2"></div>
             <div class="step temp_step" data-step="3"></div>
+          </div>
+          <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
           <div :class="'l step step-'+id" data-step="13" style="margin-top:40vh;">
@@ -429,10 +431,11 @@ figure{
     background-color: transparent;
 }
 .tab-bar{
-  height: 50px;
+  height: 40px;
   width: 100%;
-  padding: 0px 10px;
+  padding: 10px 10px;
   box-sizing: border-box;
+  background: #c4c4c4;
   div{
     width: calc(33% - 10px);
     height: 10px;
@@ -447,7 +450,7 @@ figure{
 }
 .tab-bar.fixed{
   position: fixed;
-  top:5px;
+  top:0px;
   right: 50px;
   width: 45vw;
   z-index: 3;
@@ -522,13 +525,19 @@ figure{
     background: transparent;
     border: none;
 }
-#right-slide-bar{
-  background-color: rgba(0,0,0,.2);
+.right-slide-bar{
+  // background-color: rgba(0,0,0,.2);
   height: 1200vh;
   position: absolute;
   right:50px;
   width: 45vw;
   margin-top:-10vh;
+  z-index: 1;
+  
+}
+.right-slide-bar.behind{
+  background-color: rgba(0,0,0,.2);
+  z-index: 0;
 }
 
 @media (max-width: 640px){
@@ -550,23 +559,27 @@ figure{
   }
 }
 .right{
-  width:calc(100% - 40px);
-  margin-left: 20px;
+  background: rgba(219, 193, 175,0.9);
+  width: calc(100%);
+  margin-left: 0px;
   box-sizing: border-box;
-  
+  padding: 0px;
+  p{
+    padding: 5px;
+  }
 }
 .right.slide-bar{
   width: 100%;
   margin:0px;
   right: 0px;
+  background: transparent;
 }
-#right-slide-bar{
+.right-slide-bar{
   width: calc(100% + 20px);
   right: -10px;
   .tab-bar{
-   width: calc(100% - 20px);
-   top:10px;
-   right: 10px;
+   width: 100%;
+   right: 0px;
   }
 }
 }

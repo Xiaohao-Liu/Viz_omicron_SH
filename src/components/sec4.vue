@@ -179,5 +179,10 @@ figure.part{
   }
 }
 
+#part3_bar{
+    height: 300px;
 }
+
+}
+
 </style>

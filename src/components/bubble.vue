@@ -36,7 +36,8 @@ function myfunc(div){
     .attr("height", height)
     .attr("transform", 'translate('+marginLeft+' '+marginTop+')');
 
-    let scaleX = d3.scaleLinear().range([1, width]).domain([1, 20]);
+    let scaleX = d3.scaleLinear().range([0, width]).domain([1, 20]);
+    console.log(scaleX(0),scaleX(1),scaleX(2),scaleX(3), scaleX(20))
     let scaleR = d3.scaleLinear().range([0, 30]).domain([0, Math.sqrt(179)]);//把数据求根，让圆的面积差距小一点
     const data = bubble;
         data.forEach(e => {
@@ -255,26 +256,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
 		  </div>
         <div style="height:50px;" margin></div>
         <div class="left">
-		<div class="select-box">居住在
-        <select class="small" name="type" id="type" v-model="type">
-            <option value="0">地区 </option>
-            <option value="浦东新区">浦东新区</option>
-            <option value="静安区">静安区</option>
-            <option value="徐汇区">徐汇区</option>
-            <option value="长宁区">长宁区</option>
-            <option value="虹口区">虹口区</option>
-            <option value="杨浦区">杨浦区</option>
-            <option value="普陀区">普陀区</option>
-            <option value="闵行区">闵行区</option>
-            <option value="宝山区">宝山区</option>
-            <option value="嘉定区">嘉定区</option>
-            <option value="金山区">金山区</option>
-            <option value="松江区">松江区</option>
-            <option value="青浦区">青浦区</option>
-            <option value="奉贤区">奉贤区</option>
-            <option value="崇明区">崇明区</option>
-        </select>
-        <div class="map"></div>
+		    <div :class="'job-board job-' + status">
         </div>
         </div>
 		  <div class="right">
@@ -330,15 +312,24 @@ onMounted(()=>{myfunc("#bubble-veg")})
     height: 400px;
     width: 30vw;
     margin-left:10vw;
-    .map{
+    .job-board{
         height: 300px;
         width: 500px;
         // background: white;
         background-position:center ;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image:url('../assets/images/all/map.png');
+        background-image:url('../assets/images/all/worker.png');
         margin: 10px auto;
+    }
+    .job-其他{
+        background-image:url('../assets/images/all/worker.png');
+    }
+    .job-学生{
+        background-image:url('../assets/images/all/student.png');
+    }
+    .job-一线工作者（如大白、志愿者、骑手等）{
+        background-image:url('../assets/images/all/underline.png');
     }
     .chart-div{
         position: absolute;
@@ -426,27 +417,40 @@ onMounted(()=>{myfunc("#bubble-veg")})
       margin:0px;
       padding-bottom: 50px;
   }
+  
   .right, .left{
     float:none ;
     position: relative;
     height: 400px;
     width: 100%;
     margin-left:0vw;
-    .map{
+    .job-board{
         width: 100%;
+        height: 200px;
     }
-     .chart-div{
+     #bubble-veg{
         position: absolute;
         top:40px;
-        left:-40px;
+        left: calc(50% - 200px - 6px);
+        // left:-40px;
         border:none;
      }
      h5{
-         margin-left: 40px;
+         width: 330px;
+         margin-left: calc(50% - 165px);
+        //  margin-left: 40px;
+        .day{
+            right:-40px;
+        }
      }
+     h5:before{
+        left:-40px;
     }
+    }
+    
     .right h5:nth-child(1){
         margin-top:-40px;
     }
+    .left{height: 250px;}
 }
 </style>

@@ -70,10 +70,12 @@ onMounted(()=>{init()})
       </figure>
 
       <article >
-          <div id="right-slide-bar" ref="slide_bar_container">
+          <div class="right-slide-bar" ref="slide_bar_container">
             <div :class="'tab-bar '+(tab>0?'fixed':'')" ref="tab_bar">
               <div :class="parseInt(tab)==i?'active':''" v-for="i in 4" :key="i">{{tab_name[i-1]}}</div>
             </div>
+          </div>
+          <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
           <div :class="'s step step-'+id" data-step="1">
@@ -219,10 +221,11 @@ figure{
     // transform: scale(0.9);
 }
 .tab-bar{
-  height: 50px;
+  height: 60px;
   width: 100%;
-  padding: 0px 10px;
+  padding: 10px 10px;
   box-sizing: border-box;
+  background: #c4c4c4;
   div{
     width: calc(25% - 10px);
     height: 35px;
@@ -242,7 +245,7 @@ figure{
 }
 .tab-bar.fixed{
   position: fixed;
-  top:5px;
+  top:0px;
   right: 50px;
   width: 45vw;
   z-index: 3;
@@ -286,14 +289,20 @@ figure{
     background: transparent;
     border: none;
 }
-#right-slide-bar{
-  // background-color: white;
-  background-color: rgba(0,0,0,.2);
+
+.right-slide-bar{
+  // background-color: rgba(0,0,0,.2);
   height: 650vh;
   position: absolute;
   right:50px;
   width: 45vw;
   margin-top: -50vh;
+  z-index: 1;
+  
+}
+.right-slide-bar.behind{
+  background-color: rgba(0,0,0,.2);
+  z-index: 0;
 }
 .part-0{
   background-image: url('../assets/images/all/part2_01.png');
@@ -318,6 +327,8 @@ figure{
 
 .title02{
   background-position:left;
+  margin:0px;
+  width: 100%;
 }
 .left{
   width: 500px;
@@ -340,13 +351,13 @@ figure{
   margin:0px;
   right: 0px;
 }
-#right-slide-bar{
+.right-slide-bar{
   width: calc(100% + 20px);
   right: -10px;
   .tab-bar{
-   width: calc(100% - 10px);
-   top:30px;
-   right: 10px;
+   width: 100%;
+  //  top:30px;
+   right: 0px;
   }
 }
 }
