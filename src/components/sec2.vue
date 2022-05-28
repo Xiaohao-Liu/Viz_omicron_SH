@@ -446,6 +446,7 @@ figure{
     float:left;
     margin:5px 5px;
     border-radius:5px;
+    transition:ease .5s;
   }
   div.active{
     background: #aa351b;
@@ -457,6 +458,7 @@ figure{
   right: 50px;
   width: 45vw;
   z-index: 3;
+  height: 100px;
 }
 .image{
   background-position: center;
@@ -545,7 +547,7 @@ figure{
 
 @media (max-width: 640px){
   section{
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     margin:auto;
 }
 
@@ -562,17 +564,23 @@ figure.top{
       z-index: 100;
     top: -10px;
     background: #f1f1f1;
-    box-shadow: 0px 5px 20px -5px;
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
     border-radius: 10px;
 }
 .left{
   width: 500px;
   margin:calc(50% - 250px);
-  transform: scale(0.8);
+  transform: scale(0.75);
   .part{
     height: 500px;
     width: 500px;
   }
+}
+#want_to_eat{
+  background-size: 520px;
+}
+#un_eat_able .t{
+    margin-top: -50px;
 }
 .right{
   background: rgba(219, 193, 175,0.9);
@@ -591,8 +599,8 @@ figure.top{
   background: transparent;
 }
 .right-slide-bar{
-  width: calc(100% + 20px);
-  right: -10px;
+  width: calc(100% + 40px);
+  right: -20px;
   .tab-bar{
    width: 100%;
    right: 0px;

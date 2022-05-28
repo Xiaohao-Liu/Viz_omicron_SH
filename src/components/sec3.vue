@@ -213,7 +213,7 @@ figure{
 .left{
     width: 1366px;
     background-size: 90%;
-    height: 768px;
+    // height: 768px;
     background-position:center left;
     background-repeat: no-repeat;
     left: calc(50vw - 768px);
@@ -230,7 +230,7 @@ figure{
   div{
     width: calc(25% - 10px);
     height: 35px;
-
+    transition: ease .5s;
     background: white;
     color:$button-checked-red;
     float:left;
@@ -250,6 +250,7 @@ figure{
   right: 50px;
   width: 45vw;
   z-index: 3;
+  height: 100px;
 }
 .image{
   background-position: center;
@@ -322,7 +323,7 @@ figure{
 }
 @media (max-width: 640px){
   section{
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     margin:auto;
 }
 
@@ -330,15 +331,25 @@ figure{
   height: 770vh;
 }
 .step.top{
-  padding-top:70vh;
+  margin-top:calc(50vh - 375px);
+  padding-top:50vh;
 }
 figure.top{
       z-index: 100;
       height: 500px;
     top: 10px;
     background-color: #f1f1f1;
-    box-shadow: 0px 5px 20px -5px;
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
     border-radius: 10px;
+}
+#part2_bar1 {
+    background-size: 540px;
+}
+#part2_bar2{
+  background-size:480px ;
+}
+#part2_bar3{
+  background-size:500px ;
 }
 .title02{
   background-position:left;
@@ -348,7 +359,7 @@ figure.top{
 .left{
   width: 500px;
   margin:calc(50% - 250px);
-  transform: scale(0.8);
+  transform: scale(0.75);
   background-size:850px;
   .part{
     height: 500px;
@@ -367,8 +378,8 @@ figure.top{
   right: 0px;
 }
 .right-slide-bar{
-  width: calc(100% + 20px);
-  right: -10px;
+  width: calc(100% + 40px);
+  right: -20px;
   .tab-bar{
    width: 100%;
   //  top:30px;

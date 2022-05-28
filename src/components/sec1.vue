@@ -189,7 +189,7 @@ figure{
 // }
 @media (max-width: 640px){
   section{
-    width: 100%;
+    width: calc(100% - 40px);
     margin:auto;
 }
 

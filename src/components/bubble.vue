@@ -370,9 +370,9 @@ onMounted(()=>{myfunc("#bubble-veg")})
             background-repeat:no-repeat ;
             line-height: 100px;
             height: 30px;
-                display: inline-block;
-    margin-bottom: -10px;
-    margin-right: 5px;
+            display: inline-block;
+            margin-bottom: -10px;
+            margin-right: 5px;
         }
         .logo.veg{
             background-image:url('../assets/images/all/vegetable.png');
@@ -422,8 +422,8 @@ onMounted(()=>{myfunc("#bubble-veg")})
     float:none ;
     position: relative;
     height: 450px;
-    width: 100%;
-    margin-left:0vw;
+    width: 100vw;
+    margin-left: -20px;
     overflow: hidden;
     .job-board{
         width: 100%;
