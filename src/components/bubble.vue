@@ -421,9 +421,10 @@ onMounted(()=>{myfunc("#bubble-veg")})
   .right, .left{
     float:none ;
     position: relative;
-    height: 400px;
+    height: 450px;
     width: 100%;
     margin-left:0vw;
+    overflow: hidden;
     .job-board{
         width: 100%;
         height: 200px;
@@ -437,6 +438,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
      }
      h5{
          width: 330px;
+
          margin-left: calc(50% - 165px);
         //  margin-left: 40px;
         .day{
@@ -447,9 +449,8 @@ onMounted(()=>{myfunc("#bubble-veg")})
         left:-40px;
     }
     }
-    
     .right h5:nth-child(1){
-        margin-top:-40px;
+        margin-top:0px;
     }
     .left{height: 250px;}
 }

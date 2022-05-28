@@ -1,7 +1,7 @@
 <script setup>
 import * as echarts from 'echarts';
 import scrollama from "scrollama";
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 
 const id = ref("sec-3")
 const tab = ref(0)
@@ -41,7 +41,14 @@ function init() {
           });
 }
 
+const slide_bar_container = ref()
+const end_right_slide = ref()
 onMounted(()=>{init()})
+nextTick(()=>{
+  // console.log(end_right_slide.value, slide_bar_container.value)
+  let height = end_right_slide.value.offsetTop + end_right_slide.value.offsetHeight - slide_bar_container.value.offsetTop
+  slide_bar_container.value.style.height = height + "px"
+})
 </script>
 
 <template>
@@ -65,12 +72,12 @@ onMounted(()=>{init()})
 
         </div>
       </div>
-      <figure :class="'left '+ ('part-'+count)">
+      <figure :class="'left '+ ('part-'+count) + (tab>0?' top':'')">
         <!-- {{count}},{{tab}} -->
       </figure>
 
       <article >
-          <div class="right-slide-bar" ref="slide_bar_container">
+          <div class="right-slide-bar">
             <div :class="'tab-bar '+(tab>0?'fixed':'')" ref="tab_bar">
               <div :class="parseInt(tab)==i?'active':''" v-for="i in 4" :key="i">{{tab_name[i-1]}}</div>
             </div>
@@ -78,7 +85,7 @@ onMounted(()=>{init()})
           <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
-          <div :class="'s step step-'+id" data-step="1">
+          <div :class="'s step top step-'+id" data-step="1">
               <div class="right slide-bar">
                 <div>
                   <p>在有关饮食的1517条求助信息中，绝大多数都涉及到“获取方式和渠道”方面的问题。也就是说，存在饮食问题的求助者都在上述三种获取方式中存在不同程度的困难和问题。</p>
@@ -144,7 +151,7 @@ onMounted(()=>{init()})
               </div>
           </div>
 
-          <div :class="'step step-'+id" data-step="5">
+          <div :class="'step step-'+id" data-step="5" ref="end_right_slide">
               <div class="right slide-bar">
                 <div>
                   <p>最后，有2%跨过前方重重阻碍的“幸运儿”，在最后发现自己拿到手的是变质腐烂的食物。</p>
@@ -167,23 +174,17 @@ figure{
 .step{
     height: 100vh;
     padding-top: 50px;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     margin:0px;
 }
 .step.s{
   height: 60vh;
-  padding-top: 50px;
-  box-sizing: border-box;
 }
 .step.l{
   height: 100vh;
-  padding-top: 50px;
-  box-sizing: border-box;
 }
 .step.ll{
   height: 180vh;
-  padding-top: 50px;
-  box-sizing: border-box;
 }
 .title02{
   border:none;
@@ -301,7 +302,7 @@ figure{
   
 }
 .right-slide-bar.behind{
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(196,196,196 , 100%);
   z-index: 0;
 }
 .part-0{
@@ -325,6 +326,20 @@ figure{
     margin:auto;
 }
 
+.right-slide-bar{
+  height: 770vh;
+}
+.step.top{
+  padding-top:70vh;
+}
+figure.top{
+      z-index: 100;
+      height: 500px;
+    top: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 5px 20px -5px;
+    border-radius: 10px;
+}
 .title02{
   background-position:left;
   margin:0px;

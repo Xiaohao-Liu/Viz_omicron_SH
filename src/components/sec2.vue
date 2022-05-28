@@ -1,7 +1,7 @@
 <script setup>
 import * as echarts from 'echarts';
 import scrollama from "scrollama";
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import chartScatter from './charts/chartScatter.vue';
 
 const id = ref("sec-2")
@@ -62,6 +62,14 @@ const scatter = ref()
   
 onMounted(()=>{init();})
 
+const slide_bar_container = ref()
+const end_right_slide = ref()
+onMounted(()=>{init()})
+nextTick(()=>{
+  // console.log(end_right_slide.value, slide_bar_container.value)
+  let height = end_right_slide.value.offsetTop + end_right_slide.value.offsetHeight - slide_bar_container.value.offsetTop
+  slide_bar_container.value.style.height = height + "px"
+})
 </script>
 
 <template>
@@ -81,7 +89,7 @@ onMounted(()=>{init();})
       <!-- <figure class="right" ref="left">
           <p>{{count}}</p>
       </figure> -->
-      <figure class="left">
+      <figure :class="'left '+(tab>0?'top':'')">
         <chart-scatter ref="scatter"/>
       </figure>
 
@@ -161,7 +169,7 @@ onMounted(()=>{init();})
                 <p>另外，0.8%的求助者为自己的宠物发布的求助信息。这些求助者有的在封控时恰好不在家，无法照顾，有的是宠物食物已经耗尽。</p>
               </div>
           </div>
-          <div class="right-slide-bar" ref="slide_bar_container">
+          <div class="right-slide-bar">
             <div :class="'tab-bar '+(tab>0?'fixed':'')" ref="tab_bar">
               <div :class="parseInt(tab)==i?'active':''" v-for="i in 3" :key="i"></div>
             </div>
@@ -173,7 +181,7 @@ onMounted(()=>{init();})
           <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
-          <div :class="'l step step-'+id" data-step="13" style="margin-top:40vh;">
+          <div :class="'l step top step-'+id" data-step="13" style="margin-top:40vh;">
               <div class="right slide-bar">
                 <div>
                   <p class="subtitle">温饱生命线：米面粮油紧缺</p>
@@ -312,7 +320,7 @@ onMounted(()=>{init();})
               </div>
           </div>
 
-          <div :class="'l step step-'+id" data-step="23">
+          <div :class="'l step step-'+id" data-step="23" ref="end_right_slide">
               <div class="right slide-bar">
                 <div>
                   <p><span class="ref">“完全断粮了，需要食物。我们一户群租六人，都是刚到上海几天，还没找到工作就前后被封控了三十二天。已经身无分文了！”——松江区 6783</span></p>
@@ -361,30 +369,25 @@ figure{
     width: 500px;
     top:calc(50vh - 250px);
     background: none;
+    transition: ease 0.5s;
 }
 .step{
     height: 75vh;
     margin:0px;
+    padding-top: 50px;
 }
 .step.s{
   height: 50vh;
-  padding-top: 50px;
-  box-sizing: border-box;
+  
 }
 .step.l{
   height: 100vh;
-  padding-top: 50px;
-  box-sizing: border-box;
 }
 .step.ll{
   height: 150vh;
-  padding-top: 50px;
-  box-sizing: border-box;
 }
 .step.lll{
   height: 300vh;
-  padding-top: 50px;
-  box-sizing: border-box;
 }
 .right{
   width: 500px;
@@ -536,7 +539,7 @@ figure{
   
 }
 .right-slide-bar.behind{
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(196,196,196 , 100%);
   z-index: 0;
 }
 
@@ -546,8 +549,21 @@ figure{
     margin:auto;
 }
 
+.right-slide-bar{
+  height: 1305vh;
+}
+.step.top{
+  padding-top:50vh;
+}
 .title01{
   background-position:left;
+}
+figure.top{
+      z-index: 100;
+    top: -10px;
+    background: #f1f1f1;
+    box-shadow: 0px 5px 20px -5px;
+    border-radius: 10px;
 }
 .left{
   width: 500px;
