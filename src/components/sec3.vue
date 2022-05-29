@@ -110,7 +110,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'ll step step-'+id" data-step="3">
+          <div :class="'lll step step-'+id" data-step="3">
               <div class="right slide-bar">
                 <div>
                       <p><span class='ref'>“两位老人（一位68，一位90）还有两天即将吃完大米。断粮，也缺蔬菜。周围楼栋较少，且老人不会用手机，无法网购或团购。”——嘉定区4312</span></p>
@@ -185,6 +185,9 @@ figure{
 }
 .step.ll{
   height: 180vh;
+}
+.step.lll{
+  height: 200vh;
 }
 .title02{
   border:none;
@@ -330,26 +333,29 @@ figure{
 .right-slide-bar{
   height: 770vh;
 }
+// .step{
+
+// }
 .step.top{
-  margin-top:calc(50vh - 375px);
-  padding-top:50vh;
+  margin-top:calc(50vh - 80vw - 30px);
+  padding-top:calc(80vw + 30px);
 }
 figure.top{
       z-index: 100;
-      height: 500px;
-    top: 10px;
+      // height: 500px;
+    top: 70px;
     background-color: #f1f1f1;
-    box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
+    // box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
     border-radius: 10px;
 }
 #part2_bar1 {
-    background-size: 540px;
+    background-size: 100vw;
 }
 #part2_bar2{
-  background-size:480px ;
+  background-size:100vw ;
 }
 #part2_bar3{
-  background-size:500px ;
+  background-size:100vw ;
 }
 .title02{
   background-position:left;
@@ -357,13 +363,14 @@ figure.top{
   width: 100%;
 }
 .left{
-  width: 500px;
-  margin:calc(50% - 250px);
-  transform: scale(0.75);
-  background-size:850px;
+  width: calc(100vw - 60px);
+  height: calc((100vw - 60px) * 0.8);
+  margin:auto;
+  
+  background-size: cover;
   .part{
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
   }
 }
 .right{
@@ -380,11 +387,27 @@ figure.top{
 .right-slide-bar{
   width: calc(100% + 40px);
   right: -20px;
+  margin-top: calc(-80vw);
   .tab-bar{
    width: 100%;
   //  top:30px;
    right: 0px;
   }
+}
+.part-0{
+  background-image: url('../assets/images/mobile/part2_01.png');
+}
+.part-1{
+  background-image: url('../assets/images/mobile/part2_02.png');
+}
+.part-2{
+  background-image: url('../assets/images/mobile/part2_03.png');
+}
+.part-3{
+  background-image: url('../assets/images/mobile/part2_04.png');
+}
+.part-4{
+  background-image: url('../assets/images/mobile/part2_04.png');
 }
 }
 </style>

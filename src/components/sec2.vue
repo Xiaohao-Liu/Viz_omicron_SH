@@ -8,6 +8,7 @@ const id = ref("sec-2")
 const count = ref(0)
 const tab = ref(0)
 const scrolly = ref()
+
 const scatter = ref()
 
         function init() {
@@ -65,6 +66,7 @@ onMounted(()=>{init();})
 const slide_bar_container = ref()
 const end_right_slide = ref()
 onMounted(()=>{init()})
+
 nextTick(()=>{
   // console.log(end_right_slide.value, slide_bar_container.value)
   let height = end_right_slide.value.offsetTop + end_right_slide.value.offsetHeight - slide_bar_container.value.offsetTop
@@ -89,30 +91,30 @@ nextTick(()=>{
       <!-- <figure class="right" ref="left">
           <p>{{count}}</p>
       </figure> -->
-      <figure :class="'left '+(tab>0?'top':'')">
+      <figure :class="'left '+(tab>0?'top ':'') + (count>12?'normal':'') ">
         <chart-scatter ref="scatter"/>
       </figure>
 
       <article style="margin-top:-325px">
-          <div :class="'step step-'+id" data-step="1">
+          <div :class="'step step-sec-2'" data-step="1">
               <div class="right">
                 <p>这是上海抗疫互助网站“I ♥ shanghai”自4月10日到14日期间，全部<strong>7124</strong>条求助信息。反映了上海疫情封控期间，围绕求医、购药、断粮等民众生活中的诸多生存困境。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="2">
+          <div :class="'step step-sec-2'" data-step="2">
               <div class="right">
                 <p>其中，有<strong>1517</strong>条求助信息涉及“饮食问题”，占比<strong>21%</strong>。</p>
                 <p>“吃不上”“吃不饱”“吃不好”，成为上海本轮疫情爆发以来突出的民生问题。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="3">
+          <div :class="'step step-sec-2'" data-step="3">
               <div class="right">
                 <p>下图是对这1517条求助文本的词频统计，蔬菜、米、面等主食这些基本的日常食物，是求助的重灾区，饮用水甚至也成为了重要诉求，婴儿这一特殊群体也值得关注。
                 </p>
                 <div class="image" id="wordcloud"></div>
               </div>
           </div>
-          <div :class="'ll step step-'+id" data-step="4">
+          <div :class="'ll step step-sec-2'" data-step="4">
               <div class="right">
                 <p>其中，有<strong>305</strong>条求助信息，涉及官方食材发放中的管理问题，占<strong>12%</strong>。</p>
                   <p>这些求助者，有的没有收到食材方面的物资；有的虽然收到了物资，但由于物资数量太少，或物资并非急需，并不能解决生存困境；另外有少部分的求助者收到的物资已经变质。</p>
@@ -120,7 +122,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'ll step step-'+id" data-step="5">
+          <div :class="'ll step step-sec-2'" data-step="5">
               <div class="right">
 
 <p>值得关注的是，这305条反映管理问题的求助中，存在物资发放问题的社区，也往往伴随着对于核酸检测不及时、阳性未转接、一刀切等疫情防控问题的反映。这些求助，折射着大众对当前疫情防控管理中乱象丛生的不满。</p>
@@ -131,40 +133,40 @@ nextTick(()=>{
 </p>              
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="6">
+          <div :class="'step step-sec-2'" data-step="6">
               <div class="right">
                 <p>
                   在这1517条与饮食相关的求助信息中，缺少食材、食品的诉求占比97.6%。</p>
                 </div>
           </div>
 
-          <div :class="'step step-'+id" data-step="7">
+          <div :class="'step step-sec-2'" data-step="7">
               <div class="right">
                 <p>
                   求助者普遍对蔬菜的需求较为强烈，23.7%的人想要价格处于合理区间且没有腐坏变质的蔬菜包供给。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="8">
+          <div :class="'step step-sec-2'" data-step="8">
               <div class="right">
                 <p>其次，有16.4%的求助信息提到急需大米、挂面、小麦粉等主食充饥。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="9">
+          <div :class="'step step-sec-2'" data-step="9">
               <div class="right">
                 <p>对于生鲜和饮用水的求助信息也占比颇多，分别为12.8%和12.7%。这意味着，平均不到9个求助者中就有一个人不能实现“饮用水自由”。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="10">
+          <div :class="'step step-sec-2'" data-step="10">
               <div class="right">
                 <p>值得注意的是，婴儿相关和营养品类的食品也十分瞩目，占比均在9%以上。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="11">
+          <div :class="'step step-sec-2'" data-step="11">
               <div class="right">
                 <p>仅占相关求助内容1.5%的部分则是关于煤电厨具等做饭设施方面。这类求助信息大都来自在上海打工的外地人或年轻人，尽管比例极低，但也揭开了来自“沪漂”的生活一角。</p>
               </div>
           </div>
-          <div :class="'step step-'+id" data-step="12">
+          <div :class="'step step-sec-2'" data-step="12">
               <div class="right">
                 <p>另外，0.8%的求助者为自己的宠物发布的求助信息。这些求助者有的在封控时恰好不在家，无法照顾，有的是宠物食物已经耗尽。</p>
               </div>
@@ -181,7 +183,7 @@ nextTick(()=>{
           <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
-          <div :class="'l step top step-'+id" data-step="13" style="margin-top:40vh;">
+          <div :class="'l step top step-sec-2'" data-step="13" style="margin-top:40vh;">
               <div class="right slide-bar">
                 <div>
                   <p class="subtitle">温饱生命线：米面粮油紧缺</p>
@@ -198,7 +200,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'l step step-'+id" data-step="14">
+          <div :class="'l step step-sec-2'" data-step="14">
               <div class="right slide-bar">
                 <div>
                   <p class="subtitle"> 饮食单一：物资多样化成奢侈</p>
@@ -212,7 +214,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'s step step-'+id" data-step="15">
+          <div :class="'s step step-sec-2'" data-step="15">
               <div class="right slide-bar">
                 <div>
                   <p>
@@ -220,7 +222,7 @@ nextTick(()=>{
                 </div>
               </div>
           </div>
-          <div :class="'s step step-'+id" data-step="16">
+          <div :class="'s step step-sec-2'" data-step="16">
               <div class="right slide-bar">
                 <div>
                   <p>图中气泡大小代表该类人群数量的多少，例如深红色气泡代表了平均每天吃6种食物，总共吃过12种食物的有24人。</p>
@@ -228,7 +230,7 @@ nextTick(()=>{
                 </div>
               </div>
           </div>
-          <div :class="'s step step-'+id" data-step="17">
+          <div :class="'s step step-sec-2'" data-step="17">
               <div class="right slide-bar">
                 <div>
                   <p> 蓝色虚线代表：日均所吃食物种类＝总共所吃食物种类的情况，也就是说分布在这条线上的人群，自居家以来每天都在吃同样的食物。</p>
@@ -237,7 +239,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'lll step step-'+id" data-step="18">
+          <div :class="'lll step step-sec-2'" data-step="18">
               <div class="right slide-bar">
                 <div>
                   <p>其中，日均吃到6种食材的人最多，但他们之间的食物多样性差异很大。</p>
@@ -277,7 +279,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'l step step-'+id" data-step="19">
+          <div :class="'l step step-sec-2'" data-step="19">
               <div class="right slide-bar">
                 <div>
                   <p class="subtitle">需求重灾区：母婴、老人、病患等特殊人群</p>
@@ -286,7 +288,7 @@ nextTick(()=>{
                 </div>
               </div>
           </div>
-          <div :class="'l step step-'+id" data-step="20">
+          <div :class="'l step step-sec-2'" data-step="20">
               <div class="right slide-bar">
                 <div>
                   <p>
@@ -298,7 +300,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'l step step-'+id" data-step="21">
+          <div :class="'l step step-sec-2'" data-step="21">
               <div class="right slide-bar">
                 <div>
                   <p><span class="ref">“本人68岁，孤老，左肢残疾，有残症证，肠癌二次手术，目前在大病治疗范围中……需耍牛奶，蔬菜，水果就可以，谢谢！”——静安区 2031</span></p>
@@ -309,7 +311,7 @@ nextTick(()=>{
                 </div>
               </div>
           </div>
-           <div :class="'l step step-'+id" data-step="22">
+           <div :class="'l step step-sec-2'" data-step="22">
               <div class="right slide-bar">
                 <div>
                   <p><span class="ref">“同住3个老人没有隔离，已全部阳性。目前快没有吃的了，不会手机团购。小区东西送不进房间，居委会一直联系不上，希望通过你们的渠道尽快安排单独隔离或进方舱，万分感谢。”——静安区 2312</span></p>
@@ -320,7 +322,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'l step step-'+id" data-step="23" ref="end_right_slide">
+          <div :class="'l step step-sec-2'" data-step="23" ref="end_right_slide">
               <div class="right slide-bar">
                 <div>
                   <p><span class="ref">“完全断粮了，需要食物。我们一户群租六人，都是刚到上海几天，还没找到工作就前后被封控了三十二天。已经身无分文了！”——松江区 6783</span></p>
@@ -334,6 +336,7 @@ nextTick(()=>{
       </article>
       
     </section>
+    <section>
     <div class="content-div">
       <div class="content-wrap">
     
@@ -359,6 +362,7 @@ nextTick(()=>{
                   <p>值得一提的是，疫情下的宠物们所面临的饮食问题也并不亚于人类。求助狗粮、猫粮的声音也在诸多平台铺天盖地的求助信息中发着微弱的呼救。迫不得已接受天价倒卖和尝试临期过期宠物食品的表述也时常出现在那些信息列表之中。</p>
       </div>
     </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -516,7 +520,7 @@ figure{
     width: 50%;float:left;
   }
   .desc{
-    margin-top:20px;
+    margin-top:-20px;
     width:50%;float:left;
   }
 }
@@ -547,7 +551,7 @@ figure{
 
 @media (max-width: 640px){
   section{
-    width: calc(100% - 40px);
+    width: calc(100vw - 40px);
     margin:auto;
 }
 
@@ -562,30 +566,34 @@ figure{
 }
 figure.top{
       z-index: 100;
-    top: -10px;
+    top: 50px;
     background: #f1f1f1;
-    box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
+    // box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
     border-radius: 10px;
 }
+figure{
+  top: calc(50vh - 50vw);
+}
 .left{
-  width: 500px;
-  margin:calc(50% - 250px);
-  transform: scale(0.75);
-  .part{
-    height: 500px;
-    width: 500px;
-  }
+  width: calc(100vw - 60px);
+  height: calc((100vw - 60px) * 1);
+  margin:auto;
+  background-size: cover;
+
+}
+.left.normal{
+  height: calc((100vw - 60px) * 0.8);
 }
 #want_to_eat{
-  background-size: 520px;
+  background-size: 100vw;
 }
 #un_eat_able .t{
     margin-top: -50px;
 }
 .right{
   background: rgba(219, 193, 175,0.9);
-  width: calc(100%);
-  margin-left: 0px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
   box-sizing: border-box;
   padding: 0px;
   p{
@@ -593,9 +601,9 @@ figure.top{
   }
 }
 .right.slide-bar{
-  width: 100%;
-  margin:0px;
-  right: 0px;
+  // width: 100%;
+  // margin:0px;
+  right: 20px;
   background: transparent;
 }
 .right-slide-bar{

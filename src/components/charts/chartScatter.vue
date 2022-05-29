@@ -1,9 +1,13 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import * as  d3 from 'd3';
 const data = ref([])
 const box = ref("null")
 const count = ref(0)
+
+const chart = ref()
+const chartWidth = ref(600)
+
   function init_data(){
       let d = []
       for(let i = 0; i<16;i++){
@@ -19,7 +23,13 @@ const count = ref(0)
 function init(){
       data.value = init_data();
       box.value = d3.select("#c5678")
-
+      chartWidth.value = chart.value.offsetWidth 
+      chartWidth.value = chart.value.offsetWidth 
+      // let eles = chart.value.getElementsByClassName("part")
+      // for(let i =0;i<eles.length;i++){
+      //   eles[i].style.width = chartWidth.value + "px"
+      //   eles[i].style.height = chartWidth.value + "px"
+      // }
       step_0()
 }
 function step_0(){
@@ -28,21 +38,21 @@ function step_0(){
   .classed('fade', false)
   // .transition().duration(500)
   // .style("background", "#d3d3d3")
-  .style("top",(d)=>{return d[0] * (500/16) + "px"})
-  .style("left",(d)=>{return d[1] * (500/16) + "px"})
+  .style("top",(d)=>{return d[0] * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return d[1] * (chartWidth.value/16) + "px"})
 
   // ---
   
   box.value.selectAll('.point.inner').data(data.value)
   // .transition().duration(500)
-  .style("top",(d)=>{return (d[0] % 3) * (500/16) + "px"})
-  .style("left",(d)=>{return (d[1] % 16) * (500/16) + "px"})
+  .style("top",(d)=>{return (d[0] % 3) * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return (d[1] % 16) * (chartWidth.value/16) + "px"})
 
   box.value.selectAll('.point.inner2').data(data.value)
   // .transition().duration(500)
   // .style("background", "#d3d3d3")
-  .style("top",(d)=>{return (d[0] % 3) * (500/16) + "px"})
-  .style("left",(d)=>{return (d[1] % 16) * (500/16) + "px"})
+  .style("top",(d)=>{return (d[0] % 3) * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return (d[1] % 16) * (chartWidth.value/16) + "px"})
 
   box.value.selectAll('.inner')
   .classed('fade', false)
@@ -69,14 +79,14 @@ function step_1(){
 
   box.value.selectAll('.point.inner').data(data.value)
   // .transition().duration(500)
-  .style("top",(d)=>{return (d[0] % 3) * (500/16) + "px"})
-  .style("left",(d)=>{return (d[1] % 16) * (500/16) + "px"})
+  .style("top",(d)=>{return (d[0] % 3) * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return (d[1] % 16) * (chartWidth.value/16) + "px"})
 
   box.value.selectAll('.point.inner2').data(data.value)
   // .transition().duration(500)
   // .style("background", "#d3d3d3")
-  .style("top",(d)=>{return (d[0] % 3) * (500/16) + "px"})
-  .style("left",(d)=>{return (d[1] % 16) * (500/16) + "px"})
+  .style("top",(d)=>{return (d[0] % 3) * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return (d[1] % 16) * (chartWidth.value/16) + "px"})
 
   box.value.selectAll('.inner')
   .classed('fade', false)
@@ -95,15 +105,15 @@ function step_2(){
 
   box.value.selectAll('.point.inner').data(data.value)
   // .style("background", "#d3d3d3")
-  .style("top",(d)=>{return d[0] * (500/16) + "px"})
-  .style("left",(d)=>{return d[1] * (500/16) + "px"})
+  .style("top",(d)=>{return d[0] * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return d[1] * (chartWidth.value/16) + "px"})
 
   // ---
   box.value.selectAll('.point.inner2').data(data.value)
   // .transition().duration(500)
   // .style("background", "#d3d3d3")
-  .style("top",(d)=>{return (d[0] % 3) * (500/16) + "px"})
-  .style("left",(d)=>{return (d[1] % 16) * (500/16) + "px"})
+  .style("top",(d)=>{return (d[0] % 3) * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return (d[1] % 16) * (chartWidth.value/16) + "px"})
 
   box.value.selectAll('.inner')
   .classed('fade', false)
@@ -140,8 +150,8 @@ function step_4(){
   box.value.selectAll('.point.inner2').data(data.value)
   // .style("background", "#d3d3d3")'
   // transition().duration(500)
-  .style("top",(d)=>{return d[0] * (500/16) + "px"})
-  .style("left",(d)=>{return d[1] * (500/16) + "px"})
+  .style("top",(d)=>{return d[0] * (chartWidth.value/16) + "px"})
+  .style("left",(d)=>{return d[1] * (chartWidth.value/16) + "px"})
 
   // --- 
   box.value.selectAll('.inner2.r')
@@ -194,8 +204,8 @@ function step_10(){
 function step_11(){
   box.value.selectAll('.inner2')
   .classed('status4', false)
-  box.value.selectAll('.inner2.r')
-  .classed('status3', true)
+  // box.value.selectAll('.inner2.r')
+  // .classed('status3', true)
 }
 function step_img(c){
   count.value = c;
@@ -208,12 +218,16 @@ onMounted(()=>{init()})
 defineExpose({ 
     step_0, step_1, step_2, step_3, step_4, step_5, step_6,step_7,step_8,step_9,step_11,step_10,step_img, stop_img
 })
+
+// nextTick(()=>{
+  
+// })
 </script>
 <template>
   <div class="chart" id="c5678" ref="chart">
     <div :class="'part '+('part-'+count)"></div>
     
-    <div :class="(count>0?'h':'v')">
+    <div :class="(count>0?'h':'v') + ' points'">
       <div :class="'point overall ' + (i<55?'food ':'not-food ')" v-for="i in 256" :key="i"/>
 
       <div :class="'point inner ' + (i<62?'manage ':'not-manage ')" v-for="i in 256" :key="i"/>
@@ -267,7 +281,7 @@ defineExpose({
   }
   .point.fade{
     transition: 1.5s;
-    top: 500px !important;
+    top: 100% !important;
     opacity: 0;
   }
   .point.status2{
@@ -301,6 +315,9 @@ defineExpose({
 }
 .h{
   opacity:0;
+}
+.points{
+  transition:ease .5s;
 }
 .part.part-0{
   opacity:0;
@@ -340,12 +357,46 @@ defineExpose({
 
 @media (max-width: 640px){
   .point{
-    margin:10px;
+    margin:5px;
   }
   .part{
-      width: 500px !important;
-      height: 500px !important;
+      width: 100% !important;
+      height: 100% !important;
       margin: 0px;
   }
+
+.part.part-1{
+  width: 600px;
+  height: 600px;
+  background-image: url('../../assets/images/mobile/part1_3_01.png');
+}
+.part.part-2{
+  background-image: url('../../assets/images/mobile/part1_3_02.png');
+}
+.part.part-3{
+  background-image: url('../../assets/images/mobile/part1_3_03.png');
+}
+.part.part-4{
+  background-image: url('../../assets/images/mobile/part1_3_04.png');
+}
+.part.part-5{
+  background-image: url('../../assets/images/mobile/part1_3_05.png');
+}
+.part.part-6{
+  background-image: url('../../assets/images/mobile/part2_people01.png');
+}
+.part.part-7{
+  background-image: url('../../assets/images/mobile/part2_people02.png');
+}
+.part.part-8{
+  background-image: url('../../assets/images/mobile/part2_people03.png');
+}
+.part.part-9{
+  background-image: url('../../assets/images/mobile/part2_people04.png');
+}
+.part.part-10{
+  background-image: url('../../assets/images/mobile/part2_people05.png');
+}
+
 }
 </style>

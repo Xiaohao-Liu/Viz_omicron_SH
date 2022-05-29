@@ -37,7 +37,6 @@ function myfunc(div){
     .attr("transform", 'translate('+marginLeft+' '+marginTop+')');
 
     let scaleX = d3.scaleLinear().range([0, width]).domain([1, 20]);
-    console.log(scaleX(0),scaleX(1),scaleX(2),scaleX(3), scaleX(20))
     let scaleR = d3.scaleLinear().range([0, 30]).domain([0, Math.sqrt(179)]);//把数据求根，让圆的面积差距小一点
     const data = bubble;
         data.forEach(e => {
@@ -68,7 +67,7 @@ function myfunc(div){
             }
             //分类汇总
             dataCopy.forEach(e => {
-                vegAmount[e.veg]++ ;
+                vegAmount[e.veg]++ ;    
                 fruitAmount[e.fruit]++ ;
                 proteinAmount[e.protein]++ ;
                 carbonAmount[e.carbon]++ ;
@@ -179,30 +178,44 @@ function myfunc(div){
             .attr("r", d => scaleR(Math.sqrt(d)));
             
             //get天数
-            let outputNum = [];
-            //图省事的低效率循环，可以改
-            for (let index = 0; index < veg.length; index++) {
-                const vegNum = veg[index];
-                const fruitNum = fruit[index];
-                const proteinNum = protein[index];
-                const carbonNum = carbon[index];
-                if (vegNum > 0) {
-                    outputNum[0] = index;
+            // let outputNum = [];
+            // //图省事的低效率循环，可以改
+            // for (let index = 0; index < veg.length; index++) {
+            //     const vegNum = veg[index];
+            //     const fruitNum = fruit[index];
+            //     const proteinNum = protein[index];
+            //     const carbonNum = carbon[index];
+            //     if (vegNum > 0) {
+            //         outputNum[0] = index;
+            //     }
+            //     if (fruitNum > 0) {
+            //         outputNum[1] = index;
+            //     }
+            //     if (proteinNum > 0) {
+            //         outputNum[2] = index;
+            //     }
+            //     if (carbonNum > 0) {
+            //         outputNum[3] = index;
+            //     }
+            // }
+            function get_middle(arr){
+                let sum = 0;
+                for (let index = 0; index < arr.length; index++) {
+                    sum += arr[index];
                 }
-                if (fruitNum > 0) {
-                    outputNum[1] = index;
-                }
-                if (proteinNum > 0) {
-                    outputNum[2] = index;
-                }
-                if (carbonNum > 0) {
-                    outputNum[3] = index;
+                let cum = 0
+                for (let index = 0; index < arr.length; index++) {
+                    cum += arr[index];
+                    if(sum/2 < cum){
+                        return index + 1
+                    }
                 }
             }
-            num_veg.value = outputNum[0]
-            num_fruit.value = outputNum[1]
-            num_protein.value = outputNum[2]
-            num_carbon.value = outputNum[3]
+            // console.log(veg)
+            num_veg.value = get_middle(veg)
+            num_fruit.value = get_middle(fruit)
+            num_protein.value = get_middle(protein)
+            num_carbon.value = get_middle(carbon)
             // $("#veg").html(outputNum[0]);
             // $("#fruit").html(outputNum[1]);
             // $("#protein").html(outputNum[2]);
@@ -219,6 +232,7 @@ function myfunc(div){
         // $("#type").change(() => {
         //     let dataNow = draw();
         // })
+        draw()
         watch(native, ()=>{
             draw()
         })
@@ -264,13 +278,13 @@ onMounted(()=>{myfunc("#bubble-veg")})
 			<span class="logo veg"></span>您可能已经<span class="max" id='veg' style="background-color:#fff9f0;box-shadow: none;">{{num_veg}}</span>天没吃蔬菜了。 <span class="day">天</span>
 			</h5>
             <h5>
-			<span class="logo protein"></span>您最久已经<span class="max" id="protein" style="background-color:#fff9f0;box-shadow: none;">{{num_protein}}</span>天没吃蛋白质了。 <span class="day">天</span>
+			<span class="logo fruit"></span>您可能已经<span class="max" id='fruit' style="background-color:#fff9f0;box-shadow: none;">{{num_fruit}}</span>天没吃水果了。 <span class="day">天</span>
 			</h5>
             <h5>
-			<span class="logo fruit"></span>您最久已经<span class="max" id='fruit' style="background-color:#fff9f0;box-shadow: none;">{{num_fruit}}</span>天没吃水果了。 <span class="day">天</span>
+			<span class="logo protein"></span>您可能已经<span class="max" id="protein" style="background-color:#fff9f0;box-shadow: none;">{{num_protein}}</span>天没吃蛋白质了。 <span class="day">天</span>
 			</h5>
             <h5>
-			<span class="logo carbon"></span>您最久已经<span class="max" id='carbon' style="background-color:#fff9f0;box-shadow: none;">{{num_carbon}}</span>天没吃主食了。 <span class="day">天</span>
+			<span class="logo carbon"></span>您可能已经<span class="max" id='carbon' style="background-color:#fff9f0;box-shadow: none;">{{num_carbon}}</span>天没吃主食了。 <span class="day">天</span>
 		  </h5>
 		  <div class="chart-div" id="bubble-veg"></div>
           </div>

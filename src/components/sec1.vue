@@ -27,7 +27,6 @@ function init() {
         })
         .onStepEnter((resp)=>{
             count.value = resp.index
-            // console.log("asf")
         });
 }
 
@@ -81,17 +80,17 @@ onMounted(()=>{
             <!-- {{count}} -->
         </figure>
         <article ref="box">
-        <div :class="'step step-'+id" data-step="1">
+        <div class="step step-sec-1" data-step="1">
         </div>
-        <div :class="'step step-'+id" data-step="2">
+        <div class="step step-sec-1" data-step="2">
         </div>
-        <div :class="'step step-'+id" data-step="3">
+        <div class="step step-sec-1" data-step="3">
         </div>
-        <div :class="'step step-'+id" data-step="4">
+        <div class="step step-sec-1" data-step="4">
         </div>
-        <div :class="'step step-'+id" data-step="5">
+        <div class="step step-sec-1" data-step="5">
         </div>
-        <div :class="'step step-'+id" data-step="6">
+        <div class="step step-sec-1" data-step="6">
         </div>
         <!-- <div :class="'step step-'+id" data-step="7">
         </div> -->
@@ -188,6 +187,11 @@ figure{
 //   background-image: url('../assets/images/all/timeline07.png');
 // }
 @media (max-width: 640px){
+
+#top{
+  width: 100vw;
+  margin-left: -20px;
+}
   section{
     width: calc(100% - 40px);
     margin:auto;
@@ -195,7 +199,7 @@ figure{
 
 figure.part{
     width: 100%;
-    background-size: 450px;
+    background-size: contain;
     top: 12vh;
     margin: 0px;
 }
@@ -207,5 +211,24 @@ figure.part{
   }
 }
 
+
+.part-0{
+  background-image: url('../assets/images/mobile/timeline01.png');
+}
+.part-1{
+  background-image: url('../assets/images/mobile/timeline02.png');
+}
+.part-2{
+  background-image: url('../assets/images/mobile/timeline03.png');
+}
+.part-3{
+  background-image: url('../assets/images/mobile/timeline04.png');
+}
+.part-4{
+  background-image: url('../assets/images/mobile/timeline05.png');
+}
+.part-5{
+  background-image: url('../assets/images/mobile/timeline06.png');
+}
 }
 </style>
