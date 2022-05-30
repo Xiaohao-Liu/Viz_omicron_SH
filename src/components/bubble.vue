@@ -287,6 +287,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
 			<span class="logo carbon"></span>您可能已经<span class="max" id='carbon' style="background-color:#fff9f0;box-shadow: none;">{{num_carbon}}</span>天没吃主食了。 <span class="day">天</span>
 		  </h5>
 		  <div class="chart-div" id="bubble-veg"></div>
+          <div class="mini">数据说明：气泡图数据来自对上海居民进行问卷定向投放的调查问卷，投放时间在2022年4月19日-28日。有效问卷共552份，填写问卷的人涵盖学生、工薪族、老人和抗疫一线工作者，其中绝大多数是能熟练使用智能手机的青壮年。互动文本中的天数为中位数。</div>
           </div>
 	</div>
 </template>
@@ -365,7 +366,6 @@ onMounted(()=>{myfunc("#bubble-veg")})
         margin-left:60px;
         .max{
             font-weight: bold;
-
         }
         .day{
             position:absolute;
@@ -423,6 +423,11 @@ onMounted(()=>{myfunc("#bubble-veg")})
 .right{
     width: calc(50vw - 50px);
     margin-left: 50px;
+    height: auto;
+    margin-bottom:20px;
+    .mini{
+        font-size:12px;font-family: 'KaiTi';margin-top:50px;padding:0px 30px;text-align: justify;width: 400px;box-sizing: border-box;
+    }
 }
 
 @media (max-width: 640px){
@@ -435,10 +440,13 @@ onMounted(()=>{myfunc("#bubble-veg")})
   .right, .left{
     float:none ;
     position: relative;
-    height: 450px;
+    height: auto;
     width: 100vw;
     margin-left: -20px;
     overflow: hidden;
+    .mini{
+        width: 100%;
+    }
     .job-board{
         width: 100%;
         height: 200px;
