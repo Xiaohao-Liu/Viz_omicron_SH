@@ -91,7 +91,7 @@ nextTick(()=>{
       <!-- <figure class="right" ref="left">
           <p>{{count}}</p>
       </figure> -->
-      <figure :class="'left '+(tab>0?'top ':'') + (count>12?'normal':'') ">
+      <figure :class="'left '+(tab>0?'top ':'') +(count==12?'hidden ':'') + (count>12?'normal':'') ">
         <chart-scatter ref="scatter"/>
       </figure>
 
@@ -183,7 +183,7 @@ nextTick(()=>{
           <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
-          <div :class="'l step top step-sec-2'" data-step="13" style="margin-top:40vh;">
+          <div :class="'ll step top step-sec-2'" data-step="13" style="margin-top:40vh;">
               <div class="right slide-bar">
                 <div>
                   <p class="subtitle">温饱生命线：米面粮油紧缺</p>
@@ -391,7 +391,7 @@ figure{
   height: 150vh;
 }
 .step.lll{
-  height: 300vh;
+  height: 320vh;
 }
 .right{
   width: 500px;
@@ -445,7 +445,7 @@ figure{
   background: #c4c4c4;
   div{
     width: calc(33% - 10px);
-    height: 10px;
+    height: 8px;
     background: white;
     float:left;
     margin:5px 5px;
@@ -462,7 +462,7 @@ figure{
   right: 50px;
   width: 45vw;
   z-index: 3;
-  height: 100px;
+  height: 60px;
 }
 .image{
   background-position: center;
@@ -559,19 +559,24 @@ figure{
   height: 1305vh;
 }
 .step.top{
-  padding-top:50vh;
+  padding-top:0vh;
 }
 .title01{
   background-position:left;
 }
 figure.top{
-      z-index: 100;
-    top: 50px;
-    background: #f1f1f1;
-    // box-shadow: 0px 5px 20px -5px rgba(0,0,0,.2);
-    border-radius: 10px;
+  z-index: 100;
+  top: 50px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  opacity: 1;
+}
+figure.top.hidden{
+  opacity: 0;
+  z-index: -1;
 }
 figure{
+  opacity: 1;
   top: calc(50vh - 50vw);
 }
 .left{
@@ -593,9 +598,9 @@ figure{
 .right{
   background: rgba(219, 193, 175,0.9);
   width: calc(100% - 40px);
-  margin-left: 20px;
-  box-sizing: border-box;
-  padding: 0px;
+  margin-left: 10px;
+  // box-sizing: border-box;
+  padding: 10px;
   p{
     padding: 5px;
   }
@@ -603,7 +608,7 @@ figure{
 .right.slide-bar{
   // width: 100%;
   // margin:0px;
-  right: 20px;
+  right: 10px;
   background: transparent;
 }
 .right-slide-bar{

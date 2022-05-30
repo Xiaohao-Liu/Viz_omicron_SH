@@ -151,7 +151,7 @@ nextTick(()=>{
               </div>
           </div>
 
-          <div :class="'step step-'+id" data-step="5" ref="end_right_slide">
+          <div :class="'step s step-'+id" data-step="5" ref="end_right_slide">
               <div class="right slide-bar">
                 <div>
                   <p>最后，有2%跨过前方重重阻碍的“幸运儿”，在最后发现自己拿到手的是变质腐烂的食物。</p>
@@ -184,10 +184,10 @@ figure{
   height: 100vh;
 }
 .step.ll{
-  height: 180vh;
+  height: 220vh;
 }
 .step.lll{
-  height: 200vh;
+  height: 260vh;
 }
 .title02{
   border:none;
@@ -214,13 +214,13 @@ figure{
   border:1px solid rgba(249, 223, 192, 0.35);
 }
 .left{
-    width: 1366px;
-    background-size: 90%;
+    width: 600px;
+    background-size: contain;
     // height: 768px;
     background-position:center left;
     background-repeat: no-repeat;
-    left: calc(50vw - 768px);
-    top:calc(50vh - 384px);
+    left: calc(50vw - 1220px / 2);
+    top:calc(50vh - 240px);
     transition:ease .5s;
     // transform: scale(0.9);
 }
@@ -271,20 +271,20 @@ figure{
     }
 }
 #part2_bar1{
-  background-size:600px ;
+  background-size:80% ;
       height: 120px;
   background-image:url('../assets/images/all/part2_bar1.png');
 }
 #part2_bar2{
-  background-size:600px ;
+  background-size:90% ;
       height: 120px;
-  background-position: left;
+  // background-position: left;
   background-image:url('../assets/images/all/part2_bar2.png');
 }
 #part2_bar3{
   height:120px;
-  background-size:600px ;
-  background-position: left center;
+  background-size:90% ;
+  // background-position: left center;
   background-image:url('../assets/images/all/part2_bar3.png');
 }
 .slide-bar{
@@ -349,13 +349,13 @@ figure.top{
     border-radius: 10px;
 }
 #part2_bar1 {
-    background-size: 100vw;
+    background-size: contain;
 }
 #part2_bar2{
-  background-size:100vw ;
+  background-size:contain ;
 }
 #part2_bar3{
-  background-size:100vw ;
+  background-size:contain ;
 }
 .title02{
   background-position:left;

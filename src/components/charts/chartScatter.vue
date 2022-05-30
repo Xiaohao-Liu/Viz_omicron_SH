@@ -398,5 +398,10 @@ defineExpose({
   background-image: url('../../assets/images/mobile/part2_people05.png');
 }
 
+.chart .point{
+    height: 10px;
+    width: 10px;
+    border:5px solid #d3d3d3;
+  }
 }
 </style>
