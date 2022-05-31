@@ -636,5 +636,8 @@ figure{
 .tab-bar.fixed{
   height: 60px;
 }
+#gv_things{
+  height:50px;
+}
 }
 </style>

@@ -34,6 +34,11 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family:'KaiTi';
+  src: url('./assets/SIMKAI.TTF')format('truetype'),/* Safari, Android, iOS */
+}
+
 @import "assets/global.scss";
 @import "assets/landing.scss";
 body::after{
