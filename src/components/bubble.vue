@@ -338,7 +338,9 @@ onMounted(()=>{myfunc("#bubble-veg")})
         margin: 10px auto;
     }
     .job-其他{
-        background-image:url('../assets/images/all/worker.png');
+        background-image:url('../assets/images/all/dot.png');
+            background-size: cover;
+    transform: rotate(-90deg);
     }
     .job-学生{
         background-image:url('../assets/images/all/student.png');
@@ -426,7 +428,7 @@ onMounted(()=>{myfunc("#bubble-veg")})
     height: auto;
     margin-bottom:20px;
     .mini{
-        font-size:12px;font-family: 'KaiTi';margin-top:50px;padding:0px 30px;text-align: justify;width: 400px;box-sizing: border-box;
+        font-size:12px;font-family: 'KaiTi';margin-top:50px;padding:0px 30px;text-align: justify;width: 450px;box-sizing: border-box;
     }
 }
 

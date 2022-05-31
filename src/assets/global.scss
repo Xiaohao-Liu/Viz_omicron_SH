@@ -157,9 +157,9 @@ ul,li{list-style:none}
   .mobile-only{display: block}
   .pc-only{display:none;}
 
-  .content-wrap{width: 90%; margin:0 auto; font-size: $font-size; line-height: 28px; text-align: left;overflow-x: hidden;}
-  .chart-div{width: 90%;overflow-x: hidden; margin:0 auto;}
-  .chart-scroll-wrap{width: 90%; margin:0 auto;}
+  .content-wrap{width: calc(100% - 40px); margin:0 auto; font-size: $font-size; line-height: 28px; text-align: left;overflow-x: hidden;}
+  .chart-div{width: calc(100% - 40px);overflow-x: hidden; margin:0 auto;}
+  .chart-scroll-wrap{width: calc(100% - 40px); margin:0 auto;}
   .chart-scroll-wrap{ overflow-x: scroll; }
   .credits p{width: 100%; font-size: 12px}
   .credits p.first{width: 80%;padding-left: 10%}

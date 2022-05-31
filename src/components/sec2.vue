@@ -75,17 +75,19 @@ nextTick(()=>{
 </script>
 
 <template>
-<div class="chart-div title01" ></div>
+<section>
+  <div class="chart-div title01" ></div>
   <div class="content-div">
         <div class="content-wrap">
           <p>自3月1日出现第一例无症状感染者以来，上海疫情一直反复。五月底，越来越多的上海市民有机会从居家状态中走出来，在附近自由采购物资。</p>
           <p>在过去的两个月里，长时间的全域静态管理，给未曾充分准备的上海民众带来了诸多生活问题。为了改善这一局面，在“封城”初期，各类民间互助组织如雨后春笋般应时而生，来自各行各业的志愿者，自发参与到成千上万个民间救助的解决进程中。</p>
 
-          <p>我们定时持续爬取了一家互助规模较大、志愿体系较完善的抗疫网站中的求助信息，并进行内容分类和编码，发现饮食问题在所有的求助信息中最突出。在4月19号之后，我们通过问卷星向目前居住在上海的民众定向发放并回收了552份有效问卷，试图了解上海饮食情况的全貌，试图回答什么环节在突发公共危机下的温饱保障中最为重要。</p>
+          <p>通过对4月10日-14日共7124条求助内容进行了内容分类和编码，我们发现饮食问题在所有的求助信息中最突出。4月19日-4月28日，我们通过问卷星向当时居住在上海的民众定向发放并回收了552份有效问卷，试图了解上海饮食情况的全貌，试图回答什么环节在突发公共危机下的温饱保障中最为重要。</p>
 
 
 		</div>
-	</div>
+</div>
+</section>
   <section ref="scrolly">
       <!-- <figure class="right" ref="left">
           <p>{{count}}</p>
@@ -182,7 +184,7 @@ nextTick(()=>{
           <div class="right-slide-bar behind" ref="slide_bar_container">
           </div>
 
-          <div :class="'ll step top step-sec-2'" data-step="13" style="margin-top:40vh;">
+          <div :class="'ll step top step-sec-2'" data-step="13" style="margin-top:50vh;">
               <div class="right slide-bar">
                 <div>
                   <p class="subtitle">温饱生命线：米面粮油紧缺</p>
@@ -374,23 +376,25 @@ figure{
     transition: ease 0.5s;
 }
 .step{
-    height: 75vh;
+    height:auto;
     margin:0px;
     padding-top: 50px;
+    margin-bottom: 10vh;
+    padding-bottom:10vh;
 }
-.step.s{
-  height: 50vh;
+// .step.s{
+//   margin-bottom: 5vh;
   
-}
-.step.l{
-  height: 100vh;
-}
-.step.ll{
-  height: 150vh;
-}
-.step.lll{
-  height: 320vh;
-}
+// }
+// .step.l{
+//   margin-bottom: 10vh;
+// }
+// .step.ll{
+//   margin-bottom: 5vh;
+// }
+// .step.lll{
+//  margin-bottom: 5vh;
+// }
 .right{
   width: 500px;
   margin-left: calc(50vw);
@@ -424,12 +428,15 @@ figure{
   width: 500px;
   margin-left: calc(50vw - 1120px / 2);
 }
+
 .title01{
   border:none;
   margin-top:100px;
-  width:100vw;
+  width:100%;
   height:140px;
-    background-position: calc(50% - 50px);
+  width: 650px;
+  margin:auto;
+    background-position: center;
     background-size:contain ;
     background-repeat: no-repeat;
     background-image: url('../assets/images/all/title01.png');
@@ -534,8 +541,8 @@ figure{
     width:calc(45vw - 40px);
     // box-sizing: border-box;
     // margin-left:65vw;
-    position: absolute;
-    right:50px;
+    position: relative;
+    margin-right:50px;
     background: transparent;
     border: none;
 }
@@ -568,6 +575,8 @@ figure{
 }
 .title01{
   background-position:left;
+  margin:0px;
+  width: 100%;
 }
 figure.top{
   z-index: 100;
@@ -613,7 +622,7 @@ figure{
 .right.slide-bar{
   // width: 100%;
   // margin:0px;
-  right: 10px;
+  right: 0px;
   background: transparent;
 }
 .right-slide-bar{

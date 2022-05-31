@@ -38,14 +38,14 @@ const count = ref("0")
 </script>
 
 <template>
-<div class="chart-div title03" ></div>
+
   <section >
     <!-- <figure  id="top">
         <p></p>
     </figure> -->
 
 
-    
+    <div class="chart-div title03" ></div>
     <div class="content-div">
       <div class="content-wrap">
               <!-- <p class="subtitle"><span>物资</span></p> -->
@@ -54,7 +54,7 @@ const count = ref("0")
             </p>
       </div>
 	</div>
-  <div class="chart-div" id="part3_bar" ><div style="font-size:14px;color:#666;text-align:center;">饮食问题对心理的影响比生理更加严重</div></div>
+  <div class="chart-div" id="part3_bar" ><div style="font-size:14px;color:#666;text-align:center;position: absolute;top: -14px;width: 100%;">饮食问题对心理的影响比生理更加严重</div></div>
   <div class="content-div">
       <div class="content-wrap">
               <!-- <p class="subtitle"><span>物资</span></p> -->
@@ -67,10 +67,14 @@ const count = ref("0")
             <p>“是什么时候感觉上海在好转的呢？”小壮在微博上感慨道，“当我不会再为没有咖啡而焦虑了。”在5月20号后，一批又一批的物资被送进学校，小壮再也不用再靠买葡萄糖和凉茶颗粒来模拟王老吉的口感了。</p>
             <p></p>
             <p>无独有偶，20日这天，何风在居家了51天后第一次拿到了出入证，走出公寓。“虽然路上仍然几乎看不到什么人，但是路旁的花草树木却开的如此繁茂。”何风感慨道，自己从来没有像今天这样，觉得绿色是一种多么令人愉悦的颜色。</p>
-
-            <p>上海在2022年春天的故事还没讲完。</p>
+            <p>5月30日下午，上海市新冠肺炎疫情防控工作领导小组办公室宣布，6月1日零时起，上海有序恢复住宅小区出入、公共交通运营和机动车通行。已经近两月没有理发的何风玩笑道：“抢菜的日子就要过去，而抢理发的日子来了。”</p>
+            <p></p>
+            <p></p>
+            <p>解封——已在眼前。</p>
+            <p>但上海在2022年春天的故事还没讲完。</p>
             <p>所有人都期待着，那一天的到来——可以自由吃水果、零食和蔬菜的一天。</p>
-
+            <p></p>
+            <p></p>
             <p>文中受访者小王、小壮、小佳、何风等均系化名<br/>“——松江区 6219”等指在整个求助列表中的地区来源和编号</p>
       </div>
     </div>
@@ -142,7 +146,7 @@ figure{
 }
 .title03{
   border:none;
-  width:100vw;
+  width:100%;
   height:140px;
   margin-top:100px;
     background-position: center;
@@ -159,6 +163,8 @@ figure{
     background-repeat: no-repeat;
     background-image: url('../assets/images/all/part3_bar.png');
     background-color: transparent;
+        height: 500px;
+    overflow: visible;
 }
 #want_to_eat{
     height:200px;
@@ -198,7 +204,8 @@ figure.part{
 }
 
 #part3_bar{
-    height: 300px;
+    height: 400px;
+    // background-size: 400px;
 }
 
 }
